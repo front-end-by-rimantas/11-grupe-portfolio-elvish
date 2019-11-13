@@ -11,13 +11,61 @@
     color: var( --color-primary-anti);
 }
 
-.ng-secondary1 {
+.bg-secondary1 {
     background-color: var(--color-secondary1);
 }
 
-.ng-secondary2 {
+.bg-secondary2 {
     background-color: var(--color-secondary2);
 }
+
+.text-center {
+    text-align: center;
+}
+
+h2 {
+    display: inline-block;
+    width: 100%;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+
+.fa-asterisk {
+    display: inline-block;
+    line-height: 25px;
+}
+
+.main-title-bottom {
+    display: inline-block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+    .main-title-bottom:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: "";
+        background-color:var(--color-secondary2-anti2);
+        width: 25px;
+        height: 1px; 
+    }
+    .main-title-bottom::after {
+        display: inline-block;
+        vertical-align: middle;
+        content: "";
+        background-color:var(--color-secondary2-anti2);
+        width: 25px;
+        height: 1px;
+    }
+
+    h2.no-style::before,
+    h2.no-style::after {
+        display: none;
+    }
+    h2.center {
+        text-align: center;
+    }
 
 /************************************************************/
 

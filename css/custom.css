@@ -6,6 +6,19 @@
 /************************************************************/
 /* LAYOUT */
 
+.bg-primary {
+    background-color: var(--color-primary);
+    color: var( --color-primary-anti);
+}
+
+.ng-secondary1 {
+    background-color: var(--color-secondary1);
+}
+
+.ng-secondary2 {
+    background-color: var(--color-secondary2);
+}
+
 /************************************************************/
 
 /************************************************************/

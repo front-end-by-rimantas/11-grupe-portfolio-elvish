@@ -1,4 +1,12 @@
 :root {
-    --main-color: #F8F9FA;
-    --grey-text-color: #6C757D;
+    --color-primary: rgb(0, 0, 0);
+    --color-primary-anti: #fff;
+
+    --color-secondary1: rgb(248,249,250);
+    --color-secondary1-anti1: rgb(0, 0, 0);
+    --color-secondary1-anti2: rgb(165,170,175);
+
+    --color-secondary2: rgb(255,255,255);
+    --color-secondary2-anti1: rgb(0, 0, 0);
+    --color-secondary2-anti2: rgb(165,170,175);
 }

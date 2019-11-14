@@ -23,6 +23,11 @@
     text-align: center;
 }
 
+.width-500 {
+    width: 500px;
+    margin-left: calc((100% - 500px) / 2);
+}
+
 h2 {
     display: inline-block;
     width: 100%;
@@ -74,7 +79,23 @@ h2 {
 
 /************************************************************/
 /* ABOUT ME */
+.container .row .aboutme {
+   
+    
+}
 
+.container .row .aboutme p {
+    display: inline-block;
+    width: 100%;
+    color: var(--color-secondary1-anti2);
+    margin: 10px 0;
+}
+
+.container .row .aboutme img {
+    display: inline-block;
+    width: 200px;
+    margin: 20px 0;
+}
 /************************************************************/
 
 /************************************************************/

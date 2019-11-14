@@ -5,7 +5,7 @@
 // hero
 
 // about me
-
+renderSkills( skills );
 // services
 
 // statistika

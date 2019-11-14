@@ -59,13 +59,6 @@ h2 {
         height: 1px;
     }
 
-    h2.no-style::before,
-    h2.no-style::after {
-        display: none;
-    }
-    h2.center {
-        text-align: center;
-    }
 
 /************************************************************/
 

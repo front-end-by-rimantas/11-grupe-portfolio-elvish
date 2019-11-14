@@ -4,23 +4,27 @@
 
 // hero
 
-// clients
-
 // about me
-
-// numbers
-
-// skills
-
-// latest work
-
-// job history
 
 // services
 
-// testimonials
+// statistika
 
-// contact me
+// education
+
+// hire me
+
+// our work
+
+// our clients
+
+// great people
+
+// subscribe
+
+// our blog
+
+// contact
 
 // footer
 

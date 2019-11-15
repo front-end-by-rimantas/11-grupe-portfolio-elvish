@@ -13,4 +13,7 @@
 }
 .container-header{
     padding: 20px 0;
+    background-color: transparent;
+    color: var( --color-primary-anti);
+    position: fixed;
 }

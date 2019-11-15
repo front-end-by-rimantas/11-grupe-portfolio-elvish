@@ -77,6 +77,18 @@ function renderSkills( list ) {
 // our clients
 
 // great people
+function renderGrppimg( list ) {
+    let HTML = '';
+    for ( let i=0; i<list.length; i++) {
+        HTML += '<img src="../img/great-people/1.png">';
+        
+        
+    }
+    console.log(HTML);
+    document.getElementById('greatpeople').innerHTML = HTML;
+    
+    return
+}
 
 // subscribe
 

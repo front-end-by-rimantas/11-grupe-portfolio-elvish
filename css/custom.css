@@ -168,16 +168,16 @@
 /************************************************************/
 /* GREAT PEOPLE */
 
-.grpeople .col-3 {
+.grpeople > col-3 {
     content: '';
     
 }
-.grpeople .col-6 {
+.grpeople > col-6 {
     text-align: center;
     color: rgb(165,170,175);
 }
-.grpeople .col-12 {
-
+.grpeople > col-12 {
+    
     background-color: aqua;
 }
 

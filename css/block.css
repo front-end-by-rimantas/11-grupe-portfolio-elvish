@@ -1,5 +1,16 @@
 /* GREAT PEOPLE */
 
-.grppimg {
-    background-image: url(../img/ );
+/* .grppimg {
+    
+    height: 110px;
+    width: 110px;
+    background-image: url(../img/great-people/1.png );
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+.row > img {
+    height: 110px;
+    width: 110px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }

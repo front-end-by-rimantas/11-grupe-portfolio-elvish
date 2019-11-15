@@ -74,25 +74,25 @@
 
 /************************************************************/
 /* ABOUT ME */
-.container .row .col-8 h3 {
+#aboutme h3 {
     color: var(--color-secondary2-anti2);
     margin: 10px 0;
 }
 
-.container .row p {
+#aboutme p {
     display: inline-block;
     width: 100%;
     color: var(--color-secondary2-anti2);
     margin: 10px 0;
 }
 
-.container .row .col-8 img {
+#aboutme img {
     display: inline-block;
     width: 200px;
     margin: 20px 0;
 }
 
-.container .row .col-8 i {
+#aboutme i {
     margin-left: 10px;
     margin-right: 10px;
     line-height: 25px;

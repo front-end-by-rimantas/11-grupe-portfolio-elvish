@@ -23,7 +23,7 @@
     text-align: center;
 }
 
-h2 {
+.container .row h2 {
     display: inline-block;
     width: 100%;
     font-size: 30px;
@@ -70,11 +70,69 @@ h2 {
 /************************************************************/
 /* HERO */
 
+#hero {
+    background-image: url(../img/bg/home-bg.jpg);
+    background-color: (--color-primary);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    color: var(--color-primary-anti);  
+}
+    #hero h3{
+        display: inline-block;
+        width: 100%;
+        color: var(--color-primary-anti);
+        line-height: 26px;
+        font-size: 26px;
+        padding: 100px 0 20px;
+        text-transform: capitalize;
+        font-family: 'Montserrat', 'Nunito', sans-serif;  
+        font-weight: 400;
+    }
+
+    #hero h1{
+        display: inline-block;
+        width: 100%;
+        color: var(--color-primary-anti);
+        line-height: 72px;
+        font-size: 72px;
+        padding: 20px 0;
+        text-transform: capitalize;
+        font-family: 'Montserrat', 'Nunito', sans-serif;
+        font-weight: 400;
+
+    }
+
+
+
+
 /************************************************************/
 
 /************************************************************/
 /* ABOUT ME */
+#aboutme h3 {
+    color: var(--color-secondary2-anti2);
+    margin: 10px 0;
+}
 
+#aboutme p {
+    display: inline-block;
+    width: 100%;
+    color: var(--color-secondary2-anti2);
+    margin: 10px 0;
+}
+
+#aboutme img {
+    display: inline-block;
+    width: 200px;
+    margin: 20px 0;
+}
+
+#aboutme i {
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 25px;
+}
 /************************************************************/
 
 /************************************************************/

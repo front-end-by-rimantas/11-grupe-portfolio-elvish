@@ -65,14 +65,46 @@
 /************************************************************/
 /* HEADER */
 
-
-
-
-
 /************************************************************/
 
 /************************************************************/
 /* HERO */
+
+#hero {
+    background-image: url(../img/bg/home-bg.jpg);
+    background-color: (--color-primary);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    color: var(--color-primary-anti);  
+}
+    #hero h3{
+        display: inline-block;
+        width: 100%;
+        color: var(--color-primary-anti);
+        line-height: 26px;
+        font-size: 26px;
+        padding: 100px 0 20px;
+        text-transform: capitalize;
+        font-family: 'Montserrat', 'Nunito', sans-serif;  
+        font-weight: 400;
+    }
+
+    #hero h1{
+        display: inline-block;
+        width: 100%;
+        color: var(--color-primary-anti);
+        line-height: 72px;
+        font-size: 72px;
+        padding: 20px 0;
+        text-transform: capitalize;
+        font-family: 'Montserrat', 'Nunito', sans-serif;
+        font-weight: 400;
+
+    }
+
+
+
 
 /************************************************************/
 

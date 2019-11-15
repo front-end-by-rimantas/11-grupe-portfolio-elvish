@@ -1,6 +1,15 @@
 "use strict";
 
 // header
+const headerlinks = [
+    { title: 'Home' },
+    { title: 'About' },
+    { title: 'Education' },
+    { title: 'Work' },
+    { title: 'Client' },
+    { title: 'Blog' },
+    { title: 'Contact' },
+];
 
 // hero
 

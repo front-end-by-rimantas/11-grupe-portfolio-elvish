@@ -1,6 +1,7 @@
 "use strict";
 
 // header
+renderHeader( 'header', headerlinks );
 
 // hero
 

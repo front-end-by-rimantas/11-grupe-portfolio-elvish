@@ -147,24 +147,24 @@
     margin-right: 10px;
     line-height: 25px;
 }
-#aboutme .col-6 {
+#aboutme .progress-bar {
     display: inline-block;
 }
 
 @media (max-width: 900px) {
-    #aboutme .row .col-6 {
+    #aboutme .row .progress-bar {
         width: calc(100% - (40px));
     }
 }
 
 @media (max-width: 700px) {
-    #aboutme .row .col-6 {
+    #aboutme .row .progress-bar {
         width: calc(100% - (40px));
     }
 }
 
 @media (max-width: 500px) {
-   #aboutme .row .col-6 {
+   #aboutme .row .progress-bar {
         width: calc(100% - (40px));
     }
     #aboutme img {
@@ -183,7 +183,7 @@
     }
 }
 @media (max-width: 400px) {
-    #aboutme .row .col-6 {
+    #aboutme .row .progress-bar {
             width: calc(100% - (40px));
         }
         #aboutme .row .col-10 i:nth-child(1) {

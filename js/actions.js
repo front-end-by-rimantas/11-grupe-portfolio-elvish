@@ -6,7 +6,8 @@ renderHeader( 'header', headerlinks );
 // hero
 
 // about me
-renderSkills( skills );
+renderSkills1( skills1 );
+renderSkills2( skills2 );
 // services
 
 // statistika

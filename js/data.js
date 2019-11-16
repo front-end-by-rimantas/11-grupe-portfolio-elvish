@@ -14,7 +14,7 @@ const headerlinks = [
 // hero
 
 // about me
-const skills = [
+const skills1 = [
     {
         title: 'Development',
         value: 80
@@ -26,7 +26,9 @@ const skills = [
     {
         title: 'Photoshop',
         value: 88
-    },
+    }
+];
+const skills2 = [
     {
         title: 'Html',
         value: 96

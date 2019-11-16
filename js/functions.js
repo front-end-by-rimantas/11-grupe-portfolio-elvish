@@ -111,7 +111,39 @@ function renderSkills2( list ) {
     return document.querySelector('#skills2').innerHTML = HTML;
 }
 // services
+function renderServices( list ) {
+    let HTML = '';
+    let good = 0;
 
+    if ( !Array.isArray(list) ) {
+        return console.error('ERROR: reikia saraso..');
+    }
+
+    for ( let i=0; i<list.length; i++) {
+        const item = list[i];
+        if ( !item.icon ||
+             !item.title ||
+             !item.about ) {
+            continue;
+        }
+        
+            HTML = HTML + `<div class="cards">
+            <img src="./img/services/${item.icon}" alt="service1">
+            <h3>${item.title}</h3>
+            <p>${item.about}</p>
+        </div>`;
+
+            good++;
+        
+        
+    }
+
+    if ( good === 0 ) {
+        return console.error('ERROR: duotas sarasas, bet arba tuscias, arba nei vieno gero duomens');
+    }
+    
+    return document.querySelector('#services-list').innerHTML = HTML;
+}
 // statistika
 
 // education

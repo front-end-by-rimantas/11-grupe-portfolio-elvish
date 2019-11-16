@@ -43,7 +43,38 @@ const skills2 = [
     }
 ];
 // services
-
+const services = [
+    {
+        icon: '1.png',
+        title: 'Graphic Design',
+        about: 'The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.'
+    },
+    {
+        icon: '2.png',
+        title: 'Unlimited Color',
+        about: 'The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.'
+    },
+    {
+        icon: '3.png',
+        title: 'Media Marketing',
+        about: 'The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.'
+    },
+    {
+        icon: '4.png',
+        title: 'Unlimited Wifi',
+        about: 'The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.'
+    },
+    {
+        icon: '5.png',
+        title: 'Responsive Design',
+        about: 'The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.'
+    },
+    {
+        icon: '6.png',
+        title: 'Easy to customize',
+        about: 'The standard chunk of Lorem Ipsum used since the is reproduced below for those interested.'
+    }
+];
 // statistika
 
 // education

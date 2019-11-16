@@ -9,7 +9,7 @@ renderHeader( 'header', headerlinks );
 renderSkills1( skills1 );
 renderSkills2( skills2 );
 // services
-
+renderServices( services );
 // statistika
 
 // education

@@ -10,7 +10,7 @@ renderSkills1( skills1 );
 // services
 renderServices( services );
 // statistika
-
+renderStatistics( statistics );
 // education
 
 // hire me

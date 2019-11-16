@@ -232,7 +232,44 @@
 
 /************************************************************/
 /* STATISTIKA */
+#statistics {
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/bg/img-1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+#statistics .row {
+    margin-top: 10px;
+}
+#statistics p {
+    display: inline-block;
+    width: 100%;
+    color: var(--color-primary-anti);
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#statistics h1 {
+    display: inline-block;
+    width: 100%;
+    color: var(--color-primary-anti);
+    font-size: 40px;
+}
+
+#statistics .cards {
+    display: inline-block;
+    width: calc((100% - 80px) / 4);
+    float: left;
+    border: dotted 1px var(--color-primary-anti);
+    padding: 60px 20px;
+    margin: 15px 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+#statistics .cards img {
+    margin-bottom: 20px;
+}
 /************************************************************/
 
 /************************************************************/

@@ -101,7 +101,40 @@ function renderServices( list ) {
     return document.querySelector('#services-list').innerHTML = HTML;
 }
 // statistika
+function renderStatistics( list ) {
+    let HTML = '';
+    let good = 0;
 
+    if ( !Array.isArray(list) ) {
+        return console.error('ERROR: reikia saraso..');
+    }
+
+    for ( let i=0; i<list.length; i++) {
+        const item = list[i];
+        if ( !item.icon ||
+             !item.value_start ||
+             !item.value_end ||
+             !item.title) {
+            continue;
+        }
+        
+            HTML = HTML + `<div class="cards">
+            <img src="./img/statistics/${item.icon}">
+            <h1>${item.value_start}</h1>
+            <p>${item.title}</p>
+        </div>`;
+
+            good++;
+        
+        
+    }
+
+    if ( good === 0 ) {
+        return console.error('ERROR: duotas sarasas, bet arba tuscias, arba nei vieno gero duomens');
+    }
+    
+    return document.querySelector('#statistics-list').innerHTML = HTML;
+}
 // education
 
 // hire me

@@ -78,9 +78,21 @@
 
 /************************************************************/
 /* ABOUT ME */
+#aboutme .container {
+    display: inline-block;
+}
+    #aboutme .row {
+        display: inline-block;
+    }
+
 #aboutme h3 {
+    display: inline-block;
     color: var(--color-secondary2-anti2);
     margin: 10px 0;
+}
+
+#aboutme span {
+    font-weight: lighter;
 }
 
 #aboutme p {
@@ -97,9 +109,53 @@
 }
 
 #aboutme i {
+    display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
     line-height: 25px;
+}
+#aboutme .col-6 {
+    display: inline-block;
+}
+
+@media (max-width: 900px) {
+    #aboutme .row .col-6 {
+        width: calc(100% - (40px));
+    }
+}
+
+@media (max-width: 700px) {
+    #aboutme .row .col-6 {
+        width: calc(100% - (40px));
+    }
+}
+
+@media (max-width: 500px) {
+   #aboutme .row .col-6 {
+        width: calc(100% - (40px));
+    }
+    #aboutme img {
+        display: inline-block;
+        width: 100%;
+        margin: 20px 0;
+    }
+    #aboutme .row .col-10 i:nth-child(2) {
+        display: none;
+    }
+    #aboutme i {
+        display: inline-block;
+        margin-left: 3px;
+        margin-right: 3px;
+        line-height: 25px;
+    }
+}
+@media (max-width: 400px) {
+    #aboutme .row .col-6 {
+            width: calc(100% - (40px));
+        }
+        #aboutme .row .col-10 i:nth-child(1) {
+            display: none;
+        }
 }
 /************************************************************/
 

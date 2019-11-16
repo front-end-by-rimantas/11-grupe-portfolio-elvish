@@ -7,7 +7,6 @@ renderHeader( 'header', headerlinks );
 
 // about me
 renderSkills1( skills1 );
-renderSkills2( skills2 );
 // services
 
 // statistika

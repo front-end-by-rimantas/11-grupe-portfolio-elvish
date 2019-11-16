@@ -26,9 +26,7 @@ const skills1 = [
     {
         title: 'Photoshop',
         value: 88
-    }
-];
-const skills2 = [
+    },
     {
         title: 'Html',
         value: 96

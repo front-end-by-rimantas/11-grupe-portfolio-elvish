@@ -53,14 +53,14 @@ const skills = [
 // our clients
 
 // great people
-const grppimg = [
-    { img: 'img1' },
-    { img: 'img2' },
-    { img: 'img3' },
-    { img: 'img4' },
-    { img: 'img5' },
-    { img: 'img6' }
-]
+// const grppimg = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png']
+//     { img: '1.png' },
+//     { img: '2.png' },
+//     { img: '3.png' },
+//     { img: '4.png' },
+//     { img: '5.png' },
+//     { img: '6.png' }
+// ]
 
 // subscribe
 

@@ -168,21 +168,22 @@
 /************************************************************/
 /* GREAT PEOPLE */
 
-.grpeople > col-3 {
-    content: '';
-    
+
+.text .col-3 {
+    content: '';   
 }
-.grpeople > col-6 {
+.text .col-6 {
     text-align: center;
+    font-style: unset;
     color: rgb(165,170,175);
 }
-.grpeople > col-12 {
-    
-    background-color: aqua;
+.img .col-2 > img {
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    margin: 60px;
+
 }
-
-
-
 /************************************************************/
 
 /************************************************************/

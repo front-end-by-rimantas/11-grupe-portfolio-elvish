@@ -20,6 +20,7 @@ renderSkills( skills );
 // our clients
 
 // great people
+// renderGrppimg( grppimg );
 
 // subscribe
 

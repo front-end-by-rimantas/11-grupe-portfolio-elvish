@@ -224,7 +224,7 @@
 
 @media (max-width: 900px) {
     #services .cards {
-        width: calc(100% - (40px));
+        width: calc(100% - (20px));
         padding: 20px 20px;
     }
 }
@@ -233,10 +233,11 @@
 /************************************************************/
 /* STATISTIKA */
 #statistics {
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/bg/img-1.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/bg/img-1.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 20px 0
 }
 
 #statistics .row {
@@ -245,7 +246,7 @@
 #statistics p {
     display: inline-block;
     width: 100%;
-    color: var(--color-primary-anti);
+    color: var(--color-secondary2-anti2);
     margin: 10px 0;
     font-size: 18px;
 }
@@ -261,14 +262,27 @@
     display: inline-block;
     width: calc((100% - 80px) / 4);
     float: left;
-    border: dotted 1px var(--color-primary-anti);
-    padding: 60px 20px;
+    border: dashed 1px var(--color-primary-anti);
+    padding: 20px 20px;
     margin: 15px 10px;
     text-align: center;
     border-radius: 10px;
 }
 #statistics .cards img {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 1100px) {
+    #statistics .cards {
+        padding: 40px 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    #statistics .cards {
+        width: calc(100% - (20px));
+        padding: 20px 20px;
+    }
 }
 /************************************************************/
 

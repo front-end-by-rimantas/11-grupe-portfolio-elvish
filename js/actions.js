@@ -11,6 +11,7 @@ renderSkills1( skills1 );
 renderServices( services );
 // statistika
 renderStatistics( statistics );
+counterUp( statistics );
 // education
 
 // hire me

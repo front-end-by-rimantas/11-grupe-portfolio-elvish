@@ -74,7 +74,32 @@ const services = [
     }
 ];
 // statistika
-
+const statistics = [
+    {
+        icon: '1.png',
+        value_start: 4,
+        value_end: 654,
+        title: 'Working Hours'
+    },
+    {
+        icon: '2.png',
+        value_start: 10,
+        value_end: 6400,
+        title: 'Completed Projects'
+    },
+    {
+        icon: '3.png',
+        value_start: 201,
+        value_end: 2389,
+        title: 'No. of Clients'
+    },
+    {
+        icon: '4.png',
+        value_start: 4,
+        value_end: 653,
+        title: 'Team Member'
+    }
+];
 // education
 
 // hire me

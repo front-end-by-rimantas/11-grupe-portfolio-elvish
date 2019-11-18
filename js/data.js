@@ -109,14 +109,26 @@ const statistics = [
 // our clients
 
 // great people
-// const grppimg = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png']
-//     { img: '1.png' },
-//     { img: '2.png' },
-//     { img: '3.png' },
-//     { img: '4.png' },
-//     { img: '5.png' },
-//     { img: '6.png' }
-// ]
+const greatList = [
+    {
+        icon: '1.png',
+    },
+    {
+        icon: '2.png',
+    },
+    {
+        icon: '3.png',
+    },
+    {
+        icon: '4.png',
+    },
+    {
+        icon: '5.png',
+    },
+    {
+        icon: '6.png',
+    }
+];
 
 // subscribe
 

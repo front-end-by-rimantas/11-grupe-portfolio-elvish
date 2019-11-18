@@ -169,18 +169,32 @@ function counterUp(list) {
 // our clients
 
 // great people
-// function renderGrppimg( list ) {
-//     let HTML = '';
-//     for ( let i=0; i<list.length; i++) {
-        
-//         HTML += `<img src="./img/great-people/${list(i).grppimg}>`;
-        
-        
-//     }
+function renderGrpp( list ) {
+    let HTML = '';
+    let good = 0;
 
-    
-//     return document.getElementById('greatpeople').innerHTML = HTML;
-// }
+    if ( !Array.isArray(list) ) {
+        return console.error('ERROR: reikia saraso..');
+    }
+
+    for ( let i=0; i<list.length; i++) {
+        const item = list[i];
+        if ( !item.icon ) {
+            continue;
+        }
+        
+            HTML = HTML + `<div id="block">
+            <img src="./img/great-people/${item.icon}">
+        </div>`;
+
+            good++;   
+    }
+
+    if ( good === 0 ) {
+        return console.error('ERROR: duotas sarasas, bet arba tuscias, arba nei vieno gero duomens');
+    }
+    return document.getElementById('great-list').innerHTML = HTML;
+}
 
 
 

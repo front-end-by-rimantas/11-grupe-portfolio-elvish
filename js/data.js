@@ -109,6 +109,26 @@ const statistics = [
 // our clients
 
 // great people
+const greatList = [
+    {
+        icon: '1.png',
+    },
+    {
+        icon: '2.png',
+    },
+    {
+        icon: '3.png',
+    },
+    {
+        icon: '4.png',
+    },
+    {
+        icon: '5.png',
+    },
+    {
+        icon: '6.png',
+    }
+];
 
 // subscribe
 

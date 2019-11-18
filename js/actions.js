@@ -21,6 +21,7 @@ counterUp( statistics );
 // our clients
 
 // great people
+renderGrpp( greatList );
 
 // subscribe
 

@@ -110,9 +110,21 @@
 
 /************************************************************/
 /* ABOUT ME */
+#aboutme .container {
+    display: inline-block;
+}
+    #aboutme .row {
+        display: inline-block;
+    }
+
 #aboutme h3 {
+    display: inline-block;
     color: var(--color-secondary2-anti2);
     margin: 10px 0;
+}
+
+#aboutme span {
+    font-weight: lighter;
 }
 
 #aboutme p {
@@ -120,6 +132,7 @@
     width: 100%;
     color: var(--color-secondary2-anti2);
     margin: 10px 0;
+    font-size: 18px;
 }
 
 #aboutme img {
@@ -129,20 +142,148 @@
 }
 
 #aboutme i {
+    display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
     line-height: 25px;
+}
+#aboutme .progress-bar {
+    display: inline-block;
+}
+
+@media (max-width: 900px) {
+    #aboutme .row .progress-bar {
+        width: calc(100% - (40px));
+    }
+}
+
+@media (max-width: 700px) {
+    #aboutme .row .progress-bar {
+        width: calc(100% - (40px));
+    }
+}
+
+@media (max-width: 500px) {
+   #aboutme .row .progress-bar {
+        width: calc(100% - (40px));
+    }
+    #aboutme img {
+        display: inline-block;
+        width: 100%;
+        margin: 20px 0;
+    }
+    #aboutme .row .col-10 i:nth-child(2) {
+        display: none;
+    }
+    #aboutme i {
+        display: inline-block;
+        margin-left: 3px;
+        margin-right: 3px;
+        line-height: 25px;
+    }
+}
+@media (max-width: 400px) {
+    #aboutme .row .progress-bar {
+            width: calc(100% - (40px));
+        }
+        #aboutme .row .col-10 i:nth-child(1) {
+            display: none;
+        }
 }
 /************************************************************/
 
 /************************************************************/
 /* SERVICES */
+#services .row {
+    margin-top: 10px;
+}
+#services p {
+    display: inline-block;
+    width: 100%;
+    color: var(--color-secondary2-anti2);
+    margin: 10px 0;
+    font-size: 18px;
+}
 
+#services .cards {
+    display: inline-block;
+    width: calc((100% - 60px) / 3);
+    float: left;
+    border: dotted 1px var( --color-secondary1-anti2);
+    padding: 60px 20px;
+    margin: 15px 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+#services .cards img {
+    margin-bottom: 20px;
+}
+#services .cards h3 {
+    margin-bottom: 5x;
+}
+
+@media (max-width: 900px) {
+    #services .cards {
+        width: calc(100% - (20px));
+        padding: 20px 20px;
+    }
+}
 /************************************************************/
 
 /************************************************************/
 /* STATISTIKA */
+#statistics {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/bg/img-1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 0
+}
 
+#statistics .row {
+    margin-top: 10px;
+}
+#statistics p {
+    display: inline-block;
+    width: 100%;
+    color: var(--color-secondary2-anti2);
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#statistics h1 {
+    display: inline-block;
+    width: 100%;
+    color: var(--color-primary-anti);
+    font-size: 40px;
+}
+
+#statistics .cards {
+    display: inline-block;
+    width: calc((100% - 80px) / 4);
+    float: left;
+    border: dashed 1px var(--color-primary-anti);
+    padding: 20px 20px;
+    margin: 15px 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+#statistics .cards img {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 1100px) {
+    #statistics .cards {
+        padding: 40px 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    #statistics .cards {
+        width: calc(100% - (20px));
+        padding: 20px 20px;
+    }
+}
 /************************************************************/
 
 /************************************************************/

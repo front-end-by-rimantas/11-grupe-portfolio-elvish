@@ -21,8 +21,8 @@
 }
     .container > .row {
         display: inline-block;
-        width: calc(1400px + 2 * var(--gap));
-        margin: 0 calc(50% - 700px - var(--gap));
+        width: calc(1200px + 2 * var(--gap));
+        margin: 0 calc(50% - 600px - var(--gap));
     }
         .row > .col-1,
         .row > .col-2,
@@ -54,7 +54,7 @@
         .row > .col-11 {width: var(--col-11);}
         .row > .col-12 {width: var(--col-12);}
 
-@media (max-width: 1500px) {
+@media (max-width: 1400px) {
         .container > .row {
             width: 1200px;
             margin: 0 calc((100% - 1200px) / 2);
@@ -82,6 +82,12 @@
     .container > .row {
         width: 500px;
         margin: 0 calc((100% - 500px) / 2);
+    }
+}
+@media (max-width: 600px) {
+    .container > .row {
+        width: 400px;
+        margin: 0 calc((100% - 400px) / 2);
     }
 }
 @media (max-width: 500px) {

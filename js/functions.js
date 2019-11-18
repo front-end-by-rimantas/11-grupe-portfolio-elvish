@@ -161,7 +161,39 @@ function counterUp(list) {
     setInterval(count, duration / step);
   }
 // education
+function renderEducation( list ) {
+    let HTML = '';
+    let good = 0;
 
+    if ( !Array.isArray(list) ) {
+        return console.error('ERROR: reikia saraso..');
+    }
+
+    for ( let i=0; i<list.length; i++) {
+        const item = list[i];
+        if ( !item.date ||
+             !item.title ||
+             !item.about ) {
+            continue;
+        }
+        
+            HTML = HTML + `<div class="cards">
+            <p>${item.date}</p>
+            <h3>${item.title}</h3>
+            <p>${item.about}</p>
+        </div>`;
+
+            good++;
+        
+        
+    }
+
+    if ( good === 0 ) {
+        return console.error('ERROR: duotas sarasas, bet arba tuscias, arba nei vieno gero duomens');
+    }
+    
+    return document.querySelector('#education-list').innerHTML = HTML;
+}
 // hire me
 
 // our work

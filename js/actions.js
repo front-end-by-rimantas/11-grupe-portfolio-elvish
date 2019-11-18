@@ -13,7 +13,7 @@ renderServices( services );
 renderStatistics( statistics );
 counterUp( statistics );
 // education
-
+renderEducation( education );
 // hire me
 
 // our work

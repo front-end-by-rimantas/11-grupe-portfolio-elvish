@@ -25,11 +25,11 @@ function renderHeader( target, list ) {
 function headerScroll() {
     // on skrol
     // kokiame aukstyje esu
-    const height = window.scrollY;     // parodo kokiame puslapio akstyje esam
+    const headerHeight = document.querySelector('#main_header').offsetHeight;
+    const height = window.scrollY + headerHeight;     // parodo kokiame puslapio akstyje esam
     
     // kokiuose auksciuose yra sekcijos (kurios yra paminetos header nav)
     const DOMlinks = document.querySelectorAll('#main_header nav > a');
-    console.log(DOMlinks);
 
     let links = [];
     for (let i = 0; i<DOMlinks.length; i++){
@@ -38,18 +38,48 @@ function headerScroll() {
         const split = href.split('#');
 
         if(split.length > 1){
-            console.log(href);
-            links.push('#'+split[1]);         // pasigaminam id pavadinima
+            links.push('#'+split[1]);  // pasigaminam id pavadinima
         }
     }
+
+    // susirandame sekciju poziciju aukscius
+    let sectionHeights = [];
+    for ( let i=0; i<links.length; i++ ) {
+        const link = links[i];
+        if ( link === '#' ) {
+            sectionHeights.push(0);
+            continue;
+        }
+        const section = document.querySelector(link);  // ieskos elemento id "section"
+        sectionHeights.push(section.offsetTop);
+    }
+
     // kuri sekcija man atrimiausia
+    let currentSectionImIn = 0;
+    for ( let i=0; i<sectionHeights.length; i++ ) {
+        if ( sectionHeights[i] > height ) {
+            break;
+        }
+        currentSectionImIn = i;
+    }
         // jei artimiausia sekcija paminera header nav'e 
             // atimame activ is ten kas ja dabar turi
+            document.querySelector('#main_header nav > a.active').classList.remove('active');
             // jai duodame klasia activ
-    
+            document.querySelector(`#main_header nav > a[href="${links[currentSectionImIn]}"]`).classList.add('active');
 }
+// sectionHeights[i] > height;
 
-
+function headerStyle() {
+    let scroll = window.scrollY;
+        limit = headerHeight;
+        element = document.getElementById('#main_header');
+    if ( scroll > limit ) {
+        element.classList.add("no-transparent");
+    } else {
+        element.classList.remove("no-transparent");
+    }
+}
 
 // hero
 

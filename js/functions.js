@@ -11,15 +11,46 @@ function renderHeader( target, list ) {
     if ( !Array.isArray(list) ) {
         return console.error('ERROR: reikia saraso..');
     }
-    
-    for ( let i=list.length-1; i>=0; i--) {
-        if (!list[i].title ) {
+    HTML += `<a href="#${list[0].idname}" class="active">${list[0].title}</a>`;
+    for ( let i=1; i<list.length; i++) {
+        if (!list[i].title ||
+            !list[i].idname) {
             continue;
-        }
-        HTML += `<a class = "Elvish-meniu">${list[i].title}</a>`;
+        }      
+        HTML += `<a href="#${list[i].idname}">${list[i].title}</a>`;
     }
     return document.getElementById(target).innerHTML = HTML;
 }
+
+function headerScroll() {
+    // on skrol
+    // kokiame aukstyje esu
+    const height = window.scrollY;     // parodo kokiame puslapio akstyje esam
+    
+    // kokiuose auksciuose yra sekcijos (kurios yra paminetos header nav)
+    const DOMlinks = document.querySelectorAll('#main_header nav > a');
+    console.log(DOMlinks);
+
+    let links = [];
+    for (let i = 0; i<DOMlinks.length; i++){
+        const element = DOMlinks[i];
+        const href = element.href;
+        const split = href.split('#');
+
+        if(split.length > 1){
+            console.log(href);
+            links.push('#'+split[1]);         // pasigaminam id pavadinima
+        }
+    }
+    // kuri sekcija man atrimiausia
+        // jei artimiausia sekcija paminera header nav'e 
+            // atimame activ is ten kas ja dabar turi
+            // jai duodame klasia activ
+    
+}
+
+
+
 // hero
 
 // about me

@@ -14,12 +14,16 @@ hamberger.addEventListener('click', () => {
 // hero
 
 // about me
-renderSkills1( skills1 );
+renderSkills( skills1 );
+
+window.addEventListener('scroll', skillsScroll);
+skillsScroll();
 // services
 renderServices( services );
 // statistika
 renderStatistics( statistics );
-counterUp( statistics );
+window.addEventListener('scroll', statisticsScroll);
+statisticsScroll();
 // education
 
 // hire me

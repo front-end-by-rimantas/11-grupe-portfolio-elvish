@@ -177,7 +177,7 @@ function renderEducationLeft( listLeft ) {
         }
         
             HTML = HTML + `<div class="cards-left">
-            <p>${item.date}</p>
+            <h4>${item.date}</h4>
             <h3>${item.title}</h3>
             <p>${item.about}</p>
         </div>`;

@@ -368,6 +368,77 @@
 
 /************************************************************/
 /* OUR BLOG */
+#blog .cards {
+    display: inline-block;
+    width: calc((100% - 60px) / 3);
+    float: left;
+    overflow: hidden;
+    background-color: var(--color-secondary2);
+    padding: 5px;
+    border-radius: 10px;
+    margin: 20px 10px 0 10px;
+}
+#blog p:nth-child(1) {
+    display: inline-block;
+    width: 100%;
+    color: var(--color-secondary1-anti2);
+    margin: 10px 0;
+    font-size: 18px;
+}
+#blog .blog-image {
+    display: inline-block;  
+}
+    #blog .blog-image img {
+        display: inline-block;
+        object-fit: contain;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+#blog .blog-info h3 {
+    display: inline-block;
+    font-size: 25px;
+    width: 100%;
+    margin: 10px 0;
+    color: var(--color-secondary1-anti1);
+}
+#blog .blog-info a:nth-child(2) {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color: var(--color-secondary1-anti1);
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#blog .blog-info p:nth-child(3) {
+    display: inline-block;
+    color: var(--color-secondary2-anti2);
+    font-size: 18px;
+}
+#blog .blog-info a:nth-child(4) {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-secondary1-anti1);
+    font-size: 18px;
+    font-weight: bold;
+}
+#blog .blog-info p:nth-child(5) {
+    display: inline-block;
+    color: var(--color-secondary2-anti2);
+    font-size: 18px;
+    margin: 10px 0;
+}
+#blog .blog-info a:nth-child(6) {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-secondary2-anti2);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
 
 /************************************************************/
 

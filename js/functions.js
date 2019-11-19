@@ -257,7 +257,30 @@ function renderGrpp( list ) {
 // subscribe
 
 // our blog
+function renderBlog( ) {
+    let HTML = '';
+    
+    for ( let i=0; i<blog_data.length; i++) {
+        let item = blog_data[i];
+        
 
+        HTML = HTML + `<div class="cards">
+                <div class="blog-image">
+                        <img src="${item.icon[0]}">
+                </div>
+                <div class="blog-info">
+                        <h3>${item.title}</h3>
+                        <a href="#">${item.tag}</a>
+                        <p>${item.date}</p> <a href="#">By ${item.author}</a>
+                        <p>${item.about}</p>
+                        <a href="${item.readLink}">Read more</a> 
+                </div>
+        </div>`;
+            document.querySelector('#blog-list').innerHTML = HTML;
+    }
+    return;
+    
+}
 // contact
 
 // footer

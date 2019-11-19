@@ -2,13 +2,30 @@
 
 // header
 const headerlinks = [
-    { title: 'Home' },
-    { title: 'About' },
-    { title: 'Education' },
-    { title: 'Work' },
-    { title: 'Client' },
-    { title: 'Blog' },
-    { title: 'Contact' },
+    { title: 'Home',
+      idname: 'hero'
+    },
+    { title: 'About',
+      idname: 'aboutme'
+    },
+    { title: 'Services',
+    idname: 'services'
+    },
+    { title: 'Education',
+      idname: 'education'
+    },
+    { title: 'Work',
+      idname: 'work'
+    },
+    { title: 'Client',
+      idname: 'client'
+    },
+    { title: 'Blog',
+      idname: 'blog'
+    },
+    { title: 'Contact',
+      idname: 'contact'
+    },
 ];
 
 // hero

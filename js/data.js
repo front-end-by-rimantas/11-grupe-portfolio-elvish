@@ -101,7 +101,7 @@ const statistics = [
     }
 ];
 // education
-const education = [
+const educationLeft = [
     {
         date: '2010 - 2014',
         title: 'Studied At Cambridge University',
@@ -116,7 +116,9 @@ const education = [
         date: '2016 - 2018',
         title: 'UI/UX Designer',
         about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.'
-    },
+    }
+];
+const educationRight = [
     {
         date: '2010 - 2014',
         title: 'Senior Graphic Designer',

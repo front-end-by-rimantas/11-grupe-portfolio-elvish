@@ -16,7 +16,6 @@
     animation-name: scroll;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-
 }
     .mouse div {
         display: inline-block;
@@ -26,7 +25,6 @@
         margin-top: 20px;
         animation-timing-function: linear;
     }
-
 
 @keyframes scroll {
     0% {

@@ -71,7 +71,7 @@
 /* HERO */
 
 #hero {
-    background-image: url(../img/bg/home-bg.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/bg/home-bg.jpg);
     background-color: (--color-primary);
     background-size: cover;
     background-position: center center;
@@ -101,61 +101,90 @@
         color: var(--color-primary-anti);
         line-height: 72px;
         font-size: 72px;
-        padding: 40px 0;
+        padding: 20px 0;
         text-transform: capitalize;
         font-family: 'Montserrat', 'Nunito', sans-serif;
         font-weight: 400;
     }
-    #hero .row a {
-        display: inline-block;
-        width: 100%;
-        color: var(--color-primary-anti);
-        text-decoration: none;
-
+    #hero span:before{
+        content: "Elvish Walters.";
+        animation-name: text-changed ;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        font-weight: 600;
     }
 
-
-/* ----------------------mouse---------------------- */
-.mouse{
-    display: inline-block;
-    position: absolute;
-    left: calc(50% - 15px);
-    bottom: 50px;
-    width: 30px;
-    height: 50px;
-    border: 2px solid var(--color-primary-anti);
-    border-radius: 15px;
-
-    animation-name: scroll;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-
-}
-    .mouse div {
-        display: inline-block;
-        color: var(--color-primary-anti);
-        border-radius: 3px;
-        text-decoration: none;
-        margin-top: 20px;
-    }
-        .mouse:hover {
-            animation-play-state: paused;
-        }
-
-@keyframes scroll {
+@keyframes text-changed {
     0% {
-        margin-top: 15px;
+        content: 'Elvish Walters.';
+        color: var(--color-primary-anti);
     }
-    45% {
-        margin-top: 40px;
+    16% {
+        content: 'Elvish Walters.';
+        color: transparent;
     }
-    55% {
-        margin-top: 35px;
+    17% {
+        content: 'A Designer.';
+        color: transparent;
+    }
+    33% {
+        content: 'A Designer.';
+        color: var(--color-primary-anti);
+    }
+    49% {
+        content: 'A Designer.';
+        color: transparent;
+    }
+    50% {
+        content: 'A Devloper.';
+        color: transparent;
+    }
+    66% {
+        content: 'A Devloper.';
+        color: var(--color-primary-anti);
+    }
+    82% {
+        content: 'A Devloper.';
+        color: transparent;
+    }
+    83% {
+        content: 'Elvish Walters.';
+        color: transparent;
     }
     100% {
-        margin-top: 50px;
+        content: 'Elvish Walters.';
+        color: var(--color-primary-anti);
     }
 }
+
+#hero .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 25px;
+    color: var(--color-primary-anti);
+    text-decoration: none;
+    border: var(--color-primary-anti) solid 3px;
+}
+    #hero .btn:hover{
+        color: var(--color-secondary2-anti1);
+        background-color: var(--color-secondary2);
+        transition: all 0.5s;
+    }
+    #hero .socials{
+        display: inline-block;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    #hero .socials > a{
+        display: inline-block;
+        width: 30px;
+        padding: 20px;
+        color: var(--color-primary-anti);
+        font-size: 16px;
+        line-height: 16px;
+        text-decoration: none;
+    }
+
 
 /************************************************************/
 

@@ -14,7 +14,7 @@ renderStatistics( statistics );
 counterUp( statistics );
 // education
 renderEducationLeft( educationLeft );
-// renderEducationRight( seducationRight );
+renderEducationRight( educationRight );
 // hire me
 
 // our work

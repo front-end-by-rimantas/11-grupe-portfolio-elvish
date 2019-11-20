@@ -183,7 +183,35 @@ const greatList = [
 // subscribe
 
 // our blog
-
+const blog_data = [
+    {
+        icon: ['./img/our-blog/blog-1.jpg'],
+        title: 'There are many variations',
+        tag: "Lifestyle",
+        date: '13 February 2018',
+        author: "Envato",
+        about: 'Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.',
+        readLink: "#"
+    },
+    {
+        icon: ['./img/our-blog/blog-2.jpg'],
+        title: 'There are many variations',
+        tag: "Lifestyle",
+        date: '13 February 2018',
+        author: "Envato",
+        about: 'Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.',
+        readLink: "#"
+    },
+    {
+        icon: ['./img/our-blog/blog-3.jpg','./img/our-blog/blog-4.jpg','./img/our-blog/blog-5.jpg'],
+        title: 'There are many variations',
+        tag: "Lifestyle",
+        date: '13 February 2018',
+        author: "Envato",
+        about: 'Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.',
+        readLink: "#"
+    }
+];
 // contact
 
 // footer

@@ -39,7 +39,7 @@ renderGrpp( greatList );
 // subscribe
 
 // our blog
-
+renderBlog( );
 // contact
 
 // footer

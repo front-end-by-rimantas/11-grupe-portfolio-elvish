@@ -21,7 +21,7 @@ function renderHeader( target, list ) {
     }
     return document.getElementById(target).innerHTML = HTML;
 }
-
+//----------------------------------SKROLINIMAS--------------------------------
 function headerScroll() {
     // on skrol
     // kokiame aukstyje esu
@@ -62,23 +62,25 @@ function headerScroll() {
         }
         currentSectionImIn = i;
     }
-        // jei artimiausia sekcija paminera header nav'e 
+        // jei artimiausia sekcija pamineta header nav'e 
             // atimame activ is ten kas ja dabar turi
             document.querySelector('#main_header nav > a.active').classList.remove('active');
             // jai duodame klasia activ
             document.querySelector(`#main_header nav > a[href="${links[currentSectionImIn]}"]`).classList.add('active');
 }
-// sectionHeights[i] > height;
+
 
 function headerStyle() {
-    let scroll = window.scrollY;
-        limit = headerHeight;
-        element = document.getElementById('#main_header');
-    if ( scroll > limit ) {
-        element.classList.add("no-transparent");
+    const header = document.getElementById('main_header');
+
+    if ( window.scrollY >= 80 ) {
+        // pridedu klase fixed
+        header.classList.add('fixed');
     } else {
-        element.classList.remove("no-transparent");
+        // atimu klase fixed
+        header.classList.remove('fixed');
     }
+    return;
 }
 
 // hero

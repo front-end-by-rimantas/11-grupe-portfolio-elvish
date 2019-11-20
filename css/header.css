@@ -1,18 +1,12 @@
 #main_header{
-    padding: 20px 0;
-    background-color: transparent;
+    padding: 15px 0;
     color: var( --color-primary-anti);
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     right: 0;
     z-index: 1;
-}
-
-#main_header .no-transparent {
-    background-color: #fff;
-    /* padding: 8px 0; */
-    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+    transition: all 1s;
 }
     #main_header .Elvish_name {
         display: inline-block;
@@ -33,21 +27,16 @@
         display: inline-block;
         float: right;
     }
-        #header a {
+        #main_header a {
             display: inline-block;
             float: left;
             padding: 0 10px 2px;
             font-size: 16px;
             line-height: 40px;   
             text-decoration: none;
-            color: #fff;
-            transition: all 0.4s;
+            color: var( --color-primary-anti);
             position: relative;
         }
-        /* #main_header nav > a:hover,
-        #main_header nav > a.active {
-            padding-bottom: 0;
-        } */
             #main_header nav > a:hover::before,
             #main_header nav > a.active::before {
                 padding-bottom: 0;
@@ -58,14 +47,29 @@
                 left: 50%;
                 height: 6px;
                 width: 6px;
-                background: #fff;
+                background: var( --color-primary-anti);
                 border-radius: 50%;             
                 z-index: 1;
             }
+#main_header.fixed {
+    position: fixed;
+    background-color: var(--color-secondary2);
+    color: var( --color-secondary2-anti1);
+    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+    transition: all 500ms;
+}
+        #main_header.fixed a {
+            color: var(--color-secondary2-anti1);
+        }
+            #main_header.fixed nav > a:hover::before,
+            #main_header.fixed nav > a.active::before {
+                background: var(--color-secondary2-anti1);
+            }
+
 
 @media (max-width: 900px) {
     #main_header.mobile-show {
-        height: 100vh;
+        /* height: 100vh; */
     }
         #main_header i.fa-bars,
         #main_header.mobile-show i.fa-times {
@@ -96,104 +100,8 @@
                     left: -5px;
                     height: 6px;
                     width: 6px;
-                    background: #fff;
+                    background: var(--color-primary-anti);
                     border-radius: 50%;             
                     z-index: 1;
                 }
 }
-
-
-
-
-
-
-
-
-/* header */-------------------------------------------
- 
-#header {
-    padding: 12px 0;
-    position: fixed;
-    background-color: var(--white-color);
-    z-index: 2;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    }
-
-    #header.transparent {
-        background-color: transparent;
-        box-shadow: none;
-    }
-
-    #header .logo {
-        display: inline-block;
-        float: left;
-        text-decoration: none;
-        color: var(--black-color-1);
-        font-size: 35px;
-        line-height: 45px;
-        font-weight: bold;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-        #header.transparent .logo {
-            color: #FFF;
-        }
-    #header nav {
-        display: inline-block;
-        float: right;
-    }
-     #header .bars {
-        display: none;
-     }
-
-
-        #header nav > a {
-            display: inline-block;
-            float: left;
-            margin: 0 0 0 20px;
-            padding: 0 10px;
-            color: var(--black-color-1);
-            text-decoration: none;
-            line-height: 45px;
-            position: relative;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-            #header.transparent nav > a {
-                color: #FFF;
-            }
-            #header.transparent nav > a.active::after {
-                background-color: #FFF;
-            }
-        #header nav > a:first-child {
-            margin: 0;
-        }
-            #header.transparent nav > a:hover::after {
-                background-color: #FFF; 
-            }
-
-
-
-
-            /* rutuliukas po a nuorodomis */
-            #header nav > a.active::after {
-                content: "";
-                display: inline-block;
-                width: 6px;
-                height: 6px;
-                background-color: var(--black-color-1);
-                position: absolute;
-                border-radius: 50%;
-                bottom: 0%;
-                left: calc((100% - 10px) / 2);
-               }
-            /* pazymetas rutuliukas yra didesnis */
-            #header nav > a:hover::after {
-                content: "";
-                display: inline-block;
-                width: 7px;
-                height: 7px;
-                background-color: var(--black-color-1);
-                position: absolute;
-                border-radius: 50%;
-                bottom: 0;
-                left: calc((100% - 10px) / 2);
-                }

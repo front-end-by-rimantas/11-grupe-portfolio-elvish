@@ -75,7 +75,7 @@
     background-color: (--color-primary);
     background-size: cover;
     background-position: center center;
-    height: 100vh;
+    min-height: 100vh;
     color: var(--color-primary-anti);  
 }
     #hero h3{

@@ -10,7 +10,12 @@ hamberger.addEventListener('click', () => {
     header.classList.toggle('mobile-show');
 ;})
 
-// window.addEventListener('scroll', headerScroll)
+window.addEventListener('scroll', headerScroll);
+headerScroll();
+
+window.addEventListener('scroll', headerStyle);
+headerStyle();
+
 // hero
 
 // about me

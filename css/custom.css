@@ -300,14 +300,24 @@
     margin: 10px 0px;
     color: var(--color-secondary1-anti2);   
 }
-
+/* LEFT */
 #edu-list-left {
+    position: relative;
     display: inline-block;
     float: left;
     width: 40%;
-    border-left: 1px solid var(--color-secondary1-anti2);
+    border-left: 1px dotted var(--color-secondary1-anti2);
 }
-
+    #education .cards-left::before {
+        content: "";
+        background-color:var(--color-secondary1-anti1);
+        width: 13px;
+        height: 13px;
+        border-radius: 50%; 
+        display: inline-block;
+        left: -7px;
+        position: absolute;
+}
 #edu-list-left .cards-left {
     display: inline-block;
     float: left;
@@ -323,36 +333,16 @@
     width: 100%;
     color: var(--color-secondary2-anti2);
     margin: 10px 0;
-    font-size: 18px;
-   
+    font-size: 18px; 
 }
 #education .cards-left h3 {
     margin-bottom: 5px;
-}
-    
+}    
 #education .cards-left h4 {
     margin-bottom: 10px;
 }
-    #education .cards-left h4:before {
-        content: "";
-        background-color:var(--color-secondary1-anti1);
-        width: 13px;
-        height: 13px;
-        border-radius: 50%; 
-        display: inline-block;
-        right: -30px;
-        position: absolute;
-        left: 69px;
-    }
+/* RIGHT     */
 
-#edu-list-right {
-    content: '';
-    display: inline-block;
-    float: right;
-    width: 40%;
-    border-left: 1px solid var(--color-secondary1-anti2);
-
-}
 
 @media (max-width: 900px) {
     /* #education #block {

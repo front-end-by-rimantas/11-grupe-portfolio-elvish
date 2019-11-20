@@ -25,7 +25,8 @@ renderStatistics( statistics );
 window.addEventListener('scroll', statisticsScroll);
 statisticsScroll();
 // education
-
+renderEducationLeft( educationLeft );
+renderEducationRight( educationRight );
 // hire me
 
 // our work

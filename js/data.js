@@ -118,7 +118,40 @@ const statistics = [
     }
 ];
 // education
-
+const educationLeft = [
+    {
+        date: '2010 - 2014',
+        title: 'Studied At Cambridge University',
+        about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.'
+    },
+    {
+        date: '2014 - 2016',
+        title: 'Master In Computer Science',
+        about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.'
+    },
+    {
+        date: '2016 - 2018',
+        title: 'UI/UX Designer',
+        about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.'
+    }
+];
+const educationRight = [
+    {
+        date: '2010 - 2014',
+        title: 'Senior Graphic Designer',
+        about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.'
+    },
+    {
+        date: '2014 - 2016',
+        title: 'Web Developer',
+        about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.'
+    },
+    {
+        date: '2016 - 2018',
+        title: 'Freelancer And Themeforest',
+        about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.'
+    }
+];
 // hire me
 
 // our work

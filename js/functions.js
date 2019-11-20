@@ -217,6 +217,55 @@ function statisticsScroll() {
     return;
 }
 // education
+// LEFT
+function renderEducationLeft( listLeft ) {
+    let HTML = '';
+
+    if ( !Array.isArray(listLeft) ) {
+        return console.error('ERROR: reikia saraso..');
+    }
+
+    for ( let i=0; i<listLeft.length; i++) {
+        const item = listLeft[i];
+        if ( !item.date ||
+             !item.title ||
+             !item.about ) {
+            continue;
+        }
+        
+            HTML = HTML + `<div class="cards-left">
+            <h4>${item.date}</h4>
+            <h3>${item.title}</h3>
+            <p>${item.about}</p>
+        </div>`;       
+    }
+    return document.querySelector('#edu-list-left').innerHTML = HTML;
+}
+// RIGHT
+function renderEducationRight( listRight ) {
+    let HTML = '';
+
+    if ( !Array.isArray(listRight) ) {
+        return console.error('ERROR: reikia saraso..');
+    }
+
+    for ( let i=0; i<listRight.length; i++) {
+        const item = listRight[i];
+        if ( !item.date ||
+             !item.title ||
+             !item.about ) {
+            continue;
+        }
+        
+            HTML = HTML + `<div class="cards-right">
+            <h4>${item.date}</h4>
+            <h3>${item.title}</h3>
+            <p>${item.about}</p>
+        </div>`;       
+    }
+    return document.querySelector('#edu-list-right').innerHTML = HTML;
+}
+
 
 // hire me
 

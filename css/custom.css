@@ -289,7 +289,7 @@
 /************************************************************/
 /* EDUCATION */
 #education .row {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 #education .col-3 {
     content: '';   
@@ -342,36 +342,60 @@
     margin-bottom: 10px;
 }
 /* RIGHT     */
-
+#edu-list-right {
+    position: relative;
+    display: inline-block;
+    float: right;
+    width: 40%;
+    border-left: 1px dotted var(--color-secondary1-anti2);
+}
+    #education .cards-right::before {
+        content: "";
+        background-color:var(--color-secondary1-anti1);
+        width: 13px;
+        height: 13px;
+        border-radius: 50%; 
+        display: inline-block;
+        left: -7px;
+        position: absolute;
+}
+#edu-list-right .cards-right {
+    display: inline-block;
+    float: left;
+    border: dotted 1px var( --color-secondary1-anti2);
+    padding: 20px 30px;
+    margin: 15px 0 15px 20px;
+    text-align: center;
+    border-radius: 10px;
+    text-align: left;
+}
+#education .cards-right p {
+    display: inline-block;
+    width: 100%;
+    color: var(--color-secondary2-anti2);
+    margin: 10px 0;
+    font-size: 18px; 
+}
+#education .cards-right h3 {
+    margin-bottom: 5px;
+}    
+#education .cards-right h4 {
+    margin-bottom: 10px;
+}
 
 @media (max-width: 900px) {
-    /* #education #block {
-        width: calc(100% / 3);
-    } */
-
+    #edu-list-left {
+        width: 100%;
+    }
+    #edu-list-right {
+        width: 100%;
+        }
     #education .col-3 {
         width: 0px;
     }
     #education .col-6 {
         width: 100%;
     }
-}
-
-@media (max-width: 700px) {
-    /* #education #block {
-        width: calc(100% / 2);
-    } */
-    #education .col-3 {
-        width: 0px;
-    }
-    #education .col-6 {
-        width: 100%;
-    }
-}
-@media (max-width: 500px) {
-    /* #education #block {
-        width: 100%;
-    } */
 }
 
 /************************************************************/

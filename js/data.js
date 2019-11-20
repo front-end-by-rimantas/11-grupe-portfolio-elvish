@@ -118,7 +118,40 @@ const statistics = [
     }
 ];
 // education
-
+const educationLeft = [
+    {
+        date: '2010 - 2014',
+        title: 'Studied At Cambridge University',
+        about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.'
+    },
+    {
+        date: '2014 - 2016',
+        title: 'Master In Computer Science',
+        about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.'
+    },
+    {
+        date: '2016 - 2018',
+        title: 'UI/UX Designer',
+        about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.'
+    }
+];
+const educationRight = [
+    {
+        date: '2010 - 2014',
+        title: 'Senior Graphic Designer',
+        about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.'
+    },
+    {
+        date: '2014 - 2016',
+        title: 'Web Developer',
+        about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.'
+    },
+    {
+        date: '2016 - 2018',
+        title: 'Freelancer And Themeforest',
+        about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.'
+    }
+];
 // hire me
 
 // our work
@@ -150,7 +183,35 @@ const greatList = [
 // subscribe
 
 // our blog
-
+const blog_data = [
+    {
+        icon: ['./img/our-blog/blog-1.jpg'],
+        title: 'There are many variations',
+        tag: "Lifestyle",
+        date: '13 February 2018',
+        author: "Envato",
+        about: 'Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.',
+        readLink: "#"
+    },
+    {
+        icon: ['./img/our-blog/blog-2.jpg'],
+        title: 'There are many variations',
+        tag: "Lifestyle",
+        date: '13 February 2018',
+        author: "Envato",
+        about: 'Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.',
+        readLink: "#"
+    },
+    {
+        icon: ['./img/our-blog/blog-3.jpg','./img/our-blog/blog-4.jpg','./img/our-blog/blog-5.jpg'],
+        title: 'There are many variations',
+        tag: "Lifestyle",
+        date: '13 February 2018',
+        author: "Envato",
+        about: 'Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.',
+        readLink: "#"
+    }
+];
 // contact
 
 // footer

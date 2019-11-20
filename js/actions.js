@@ -10,18 +10,28 @@ hamberger.addEventListener('click', () => {
     header.classList.toggle('mobile-show');
 ;})
 
-// window.addEventListener('scroll', headerScroll)
+window.addEventListener('scroll', headerScroll);
+headerScroll();
+
+window.addEventListener('scroll', headerStyle);
+headerStyle();
+
 // hero
 
 // about me
-renderSkills1( skills1 );
+renderSkills( skills1 );
+
+window.addEventListener('scroll', skillsScroll);
+skillsScroll();
 // services
 renderServices( services );
 // statistika
 renderStatistics( statistics );
-counterUp( statistics );
+window.addEventListener('scroll', statisticsScroll);
+statisticsScroll();
 // education
-
+renderEducationLeft( educationLeft );
+renderEducationRight( educationRight );
 // hire me
 
 // our work
@@ -34,7 +44,7 @@ renderGrpp( greatList );
 // subscribe
 
 // our blog
-
+renderBlog( );
 // contact
 
 // footer

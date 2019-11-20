@@ -1,17 +1,12 @@
 #main_header{
-    padding: 20px 0;
-    background-color: transparent;
+    padding: 15px 0;
     color: var( --color-primary-anti);
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     right: 0;
     z-index: 1;
-}
-#main_header .stickyadd {
-    background-color: #fff;
-    padding: 8px 0;
-    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+    transition: all 1s;
 }
     #main_header .Elvish_name {
         display: inline-block;
@@ -32,21 +27,16 @@
         display: inline-block;
         float: right;
     }
-        #header a {
+        #main_header a {
             display: inline-block;
             float: left;
             padding: 0 10px 2px;
             font-size: 16px;
             line-height: 40px;   
             text-decoration: none;
-            color: #fff;
-            transition: all 0.4s;
+            color: var( --color-primary-anti);
             position: relative;
         }
-        /* #main_header nav > a:hover,
-        #main_header nav > a.active {
-            padding-bottom: 0;
-        } */
             #main_header nav > a:hover::before,
             #main_header nav > a.active::before {
                 padding-bottom: 0;
@@ -57,14 +47,29 @@
                 left: 50%;
                 height: 6px;
                 width: 6px;
-                background: #fff;
+                background: var( --color-primary-anti);
                 border-radius: 50%;             
                 z-index: 1;
             }
+#main_header.fixed {
+    position: fixed;
+    background-color: var(--color-secondary2);
+    color: var( --color-secondary2-anti1);
+    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+    transition: all 500ms;
+}
+        #main_header.fixed a {
+            color: var(--color-secondary2-anti1);
+        }
+            #main_header.fixed nav > a:hover::before,
+            #main_header.fixed nav > a.active::before {
+                background: var(--color-secondary2-anti1);
+            }
+
 
 @media (max-width: 900px) {
     #main_header.mobile-show {
-        height: 100vh;
+        /* height: 100vh; */
     }
         #main_header i.fa-bars,
         #main_header.mobile-show i.fa-times {
@@ -95,7 +100,7 @@
                     left: -5px;
                     height: 6px;
                     width: 6px;
-                    background: #fff;
+                    background: var(--color-primary-anti);
                     border-radius: 50%;             
                     z-index: 1;
                 }

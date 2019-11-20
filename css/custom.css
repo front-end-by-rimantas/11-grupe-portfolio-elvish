@@ -499,6 +499,15 @@
 
 /************************************************************/
 /* SUBSCRIBE */
+#subscribe .col-3 {
+    content: '';   
+}
+#subscribe .col-6 {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0px;
+    color: var(--color-secondary1-anti2);
+}
 
 /************************************************************/
 

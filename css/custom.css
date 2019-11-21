@@ -429,6 +429,7 @@
         #hireme a:hover {
             background-color: var(--color-primary-anti);
             color: var(--color-primary);
+            transition: 0.5s;
         }
 /************************************************************/
 
@@ -509,6 +510,31 @@
     color: var(--color-secondary1-anti2);
 }
 
+#sub {
+    display: inline-block;
+    margin-top: 80px;
+}
+    #sub > input {
+        display: inline-block;
+        float: center;
+    }
+    #sub a {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 20px;
+        background-color: var(--color-primary);
+        color: var(--color-primary-anti);
+        border: solid 2px var(--color-primary);
+        padding: 13px 26px;
+        border-radius: 30px;
+    }
+    #sub a:hover {
+        background-color: var(--color-primary-anti);
+        color: var(--color-primary);
+        border: solid 2px var(--color-primary);
+        transition: 0.5s;
+    }
 /************************************************************/
 
 /************************************************************/

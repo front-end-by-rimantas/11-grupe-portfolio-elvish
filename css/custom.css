@@ -78,6 +78,7 @@
     min-height: 100vh;
     color: var(--color-primary-anti);  
     position: relative;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
 }
     #hero > .row {
         position: absolute;
@@ -184,6 +185,18 @@
         line-height: 16px;
         text-decoration: none;
     }
+    /* hero bg animacija */
+#particles-js{ 
+    position:absolute; 
+    width: 100%; 
+    min-height: 100vh;
+    left: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center; 
+}
+
 
 /************************************************************/
 

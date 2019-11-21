@@ -509,26 +509,41 @@
     margin: 10px 0px;
     color: var(--color-secondary1-anti2);
 }
-
 #sub {
     display: inline-block;
-    margin-top: 80px;
+    margin-top: 20px;
 }
-    #sub > input {
+    #sub input {
         display: inline-block;
-        float: center;
-    }
+        border-radius: 30px;
+        padding: 13px;
+        /* padding-left: 26px; */
+        width: 600px;
+        font-size: 20px;
+        text-align: left;
+        border: none;
+        outline: none;
+        background-color: var(--color-secondary1);
+        color: var(--color-secondary1-anti2);
+        border: solid 3px var(--color-secondary1);
+    }    
+    #sub input::placeholder {
+        color: var(--color-secondary1-anti2);         
+    }  
     #sub a {
         display: inline-block;
         text-decoration: none;
         text-transform: capitalize;
         font-size: 20px;
         background-color: var(--color-primary);
-        color: var(--color-primary-anti);
-        border: solid 2px var(--color-primary);
+        color: var(--color-primary-anti);    
         padding: 13px 26px;
         border-radius: 30px;
-    }
+        position: absolute;
+        right: 390px;
+        /* bottom: -2px; */
+        
+    }    
     #sub a:hover {
         background-color: var(--color-primary-anti);
         color: var(--color-primary);

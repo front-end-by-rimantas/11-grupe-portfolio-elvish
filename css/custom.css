@@ -185,6 +185,18 @@
         text-decoration: none;
     }
 
+#particles-js{ 
+    position:absolute; 
+    width: 100%; 
+    min-height: 100%;
+    left: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center; 
+}
+
+
 /************************************************************/
 
 /************************************************************/

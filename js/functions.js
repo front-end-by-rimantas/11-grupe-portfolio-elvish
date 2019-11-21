@@ -302,6 +302,46 @@ function renderEducationRight( listRight ) {
 // hire me
 
 // our work
+function renderGallery( list ) {
+    const DOM = document.querySelector('#gallery');
+    let HTML = '';
+    let filterHTML = 'filter';
+    let listHTML = '';
+
+
+
+    for(let i = 0; i<list.length; i++){
+        const work = list[i];
+        listHTML += `<div class="work">
+                        <img src="./img/our-work/${work.photo}">
+                        <div class="hover">
+                            <h5>${work.name}</h5>
+                            <div class="title">${work.title.join(', ')}</div>
+                        </div>
+                    </div>`;
+        
+    }
+
+
+
+    HTML = `<div class="gallery">
+                <div class="filter">
+                    ${filterHTML}
+                </div>
+                <div class="list">
+                    ${listHTML}
+                </div>
+            </div>`;
+                    
+
+
+    return DOM.innerHTML = HTML;
+}
+
+
+
+
+
 
 // our clients
 

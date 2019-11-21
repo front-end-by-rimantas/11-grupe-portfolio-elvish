@@ -1,0 +1,70 @@
+#work p {
+    display: inline-block;
+    width: 100%;
+    color: var(--color-secondary2-anti2);
+    margin: 10px 0;
+    font-size: 18px;
+}
+.gallery{
+    display: inline-block;
+    width: 100%;
+
+}
+    .gallery > .filter {
+        display: inline-block;
+        width: 100%;
+        margin: 50px 0;
+
+    }
+    .gallery > .list {
+        display: inline-block;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+    }
+        .gallery > .list > .work {
+            display: inline-block;
+            width: calc((100% - 90px) / 3);
+            float: left;
+            margin: 0 15px 30px 15px;
+            overflow: hidden;
+            position: relative;
+            text-transform: capitalize;
+            border-radius: 5px;
+
+
+        }
+            .gallery .work > img {
+                display: inline-block;
+                width: 100%;
+            }
+            .gallery .work > .hover {
+                display: none;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.7);
+
+
+            }
+                .gallery .work:hover > .hover {
+                    display: inline-block;
+                }
+                .gallery .hover > h5 {
+                    display: inline-block;
+                    color: var(--color-primary-anti);
+                    width: 100%;
+                    font-size: 20px;
+                    line-height: 20px;
+                    
+                }
+                .gallery .hover > .title {
+                    display: inline-block;
+                    width: 100%;
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: var(--color-secondary1-anti2);
+                    
+                }
+                

@@ -95,25 +95,25 @@ const statistics = [
     {
         icon: '1.png',
         value_start: 4,
-        value_end: 654,
+        value_end: 150,
         title: 'Working Hours'
     },
     {
         icon: '2.png',
         value_start: 10,
-        value_end: 6400,
+        value_end: 568,
         title: 'Completed Projects'
     },
     {
         icon: '3.png',
         value_start: 201,
-        value_end: 2389,
+        value_end: 656,
         title: 'No. of Clients'
     },
     {
         icon: '4.png',
-        value_start: 4,
-        value_end: 653,
+        value_start: 6,
+        value_end: 356,
         title: 'Team Member'
     }
 ];

@@ -383,10 +383,7 @@
 #education .row {
     margin-top: 30px;
 }
-#education .col-3 {
-    content: '';   
-}
-#education .col-6 {
+#education p {
     text-align: center;
     font-size: 18px;
     margin: 10px 0px;
@@ -521,6 +518,7 @@
         #hireme a:hover {
             background-color: var(--color-primary-anti);
             color: var(--color-primary);
+            transition: 0.5s;
         }
 /************************************************************/
 
@@ -536,10 +534,7 @@
 
 /************************************************************/
 /* GREAT PEOPLE */
-#greatpeople .col-3 {
-    content: '';   
-}
-#greatpeople .col-6 {
+#greatpeople p {
     text-align: center;
     font-size: 18px;
     margin: 10px 0px;
@@ -550,7 +545,6 @@
     width: 120px;
     height: 100px;
 }
-
 #greatpeople #block {
     display: inline-block;
     float: left;
@@ -591,7 +585,57 @@
 
 /************************************************************/
 /* SUBSCRIBE */
-
+#subscribe p {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0px;
+    color: var(--color-secondary1-anti2);
+}
+#sub {
+    display: inline-block;
+    margin-top: 20px;
+}
+#sub .col-6 {
+    position: relative;
+}
+    #sub input {
+        display: inline-block;
+        border-radius: 30px;
+        padding: 13px;
+        width: 100%;
+        font-size: 20px;
+        text-align: left;
+        border: none;
+        outline: none;
+        background-color: var(--color-secondary1);
+        color: var(--color-secondary1-anti2);
+        border: solid 3px var(--color-secondary1);
+        
+        
+    }    
+    #sub input::placeholder {
+        color: var(--color-secondary1-anti2);         
+    }  
+    #sub a {
+        display: inline-block;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 20px;
+        background-color: var(--color-primary);
+        color: var(--color-primary-anti);    
+        padding: 13px 26px;
+        border-radius: 30px;
+        position: absolute;
+        float: left;
+        left: 76%;  
+        bottom: 3px;   
+    }    
+    #sub a:hover {
+        background-color: var(--color-primary-anti);
+        color: var(--color-primary);
+        border: solid 2px var(--color-primary);
+        transition: 0.5s;
+    }
 /************************************************************/
 
 /************************************************************/

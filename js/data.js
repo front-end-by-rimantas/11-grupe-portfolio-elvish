@@ -195,7 +195,7 @@ const blog_data = [
     },
     {
         icon: ['./img/our-blog/blog-2.jpg'],
-        video: 'https://www.youtube.com/watch?v=5dsGWM5XGdg',
+        video: 'https://player.vimeo.com/video/29440238?title=0&byline=0&portrait=0',
         title: 'Contrary to popular belief',
         tag: "Travel",
         date: '13 February 2018',

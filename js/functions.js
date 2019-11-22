@@ -378,11 +378,9 @@ function renderBlog( list ) {
                     <div class="video-image">
                     <img src="${item.icon[0]}">
                     </div>
-                        <a target="_blank" href="${item.video}">
                         <div class="play-image">
                         <i class="fa fa-play"></i>
                         </div>
-                        </a>
                     </div>
                     <div class="blog-info">
                             <h3>${item.title}</h3>
@@ -391,6 +389,17 @@ function renderBlog( list ) {
                             <p>${item.about}</p>
                             <a href="${item.readLink}">Read more</a> 
                     </div>
+            </div>
+            
+            <div class="lightbox">
+                <div class="background">
+                </div>
+                <div class="content">
+                    <iframe src="${item.video}" 
+                    width="700" 
+                    height="500" 
+                    frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
             </div>`;
             }
             document.querySelector('#blog-list').innerHTML = HTML;

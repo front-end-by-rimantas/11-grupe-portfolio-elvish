@@ -305,24 +305,37 @@ function renderEducationRight( listRight ) {
 function renderGallery( list ) {
     const DOM = document.querySelector('#gallery');
     let HTML = '';
-    let filterHTML = 'filter';
+    let filterHTML = '';
     let listHTML = '';
 
+    // filtravimas
+    let unikalusTagai = [];
+    for(let i = 0; i<list.length; i++){
+        const tags = list[i].tags;     
+        for(let j=0; j<tags.length; j++){
+            const tag = tags[j];
+            if(unikalusTagai.indexOf(tag) === -1){
+                unikalusTagai.push(tag);
+            }
+        }
+    }
+    filterHTML += `<div class="item active">all</div>`;
+    for(let i=0; i<unikalusTagai.length; i++){
+        filterHTML += `<div class="snaige">*</div>
+                       <div class="item">${unikalusTagai[i]}</div>`;
+    }
 
-
+    // nuotraukos
     for(let i = 0; i<list.length; i++){
         const work = list[i];
-        listHTML += `<div class="work">
+        listHTML += `<div class="work show">
                         <img src="./img/our-work/${work.photo}">
                         <div class="hover">
                             <h5>${work.name}</h5>
                             <div class="title">${work.title.join(', ')}</div>
                         </div>
-                    </div>`;
-        
+                    </div>`; 
     }
-
-
 
     HTML = `<div class="gallery">
                 <div class="filter">
@@ -333,11 +346,46 @@ function renderGallery( list ) {
                 </div>
             </div>`;
                     
+    // idedam susikurta HTML i bendra faila
+    DOM.innerHTML = HTML;
 
-
-    return DOM.innerHTML = HTML;
+    // kada turi veikti
+    const filterItem = DOM.querySelectorAll('.filter > .item');
+    for (let i=0; i<filterItem.length; i++){
+        filterItem[i].addEventListener('click', updateGallery);
+    }
+    return;
 }
 
+function updateGallery(event){
+    const clickedTag = event.target.textContent.trim();
+    const DOMworks = document.querySelectorAll('.gallery > .list > .work');
+
+    if ( clickedTag === 'all' ) {
+        for ( let i=0; i<DOMworks.length; i++ ) {
+            DOMworks[i].classList.add('show');
+        }
+        return;
+    }
+
+    for(let i=0; i<works.length; i++){
+        const work = works[i];
+        let show = false;
+
+        for(let j=0; j<work.tags.length; j++){
+            const tag = work.tags[j];
+            if(clickedTag === tag){
+                show = true;
+            }
+        }
+        if(show){
+            DOMworks[i].classList.add('show');
+        } else {
+            DOMworks[i].classList.remove('show');
+        }
+    }
+    return;
+}
 
 
 

@@ -8,21 +8,48 @@
 .gallery{
     display: inline-block;
     width: 100%;
-
 }
     .gallery > .filter {
         display: inline-block;
         width: 100%;
         margin: 50px 0;
-
+        position: relative;
     }
+        .gallery > .filter > .snaige {
+            display: inline-block;
+            font-size: 14px;
+            line-height: 14px;
+            color: var(--color-secondary2-anti2);
+            position: absolute;
+            bottom: 8px;
+        }
+        .gallery > .filter > .item {
+            display: inline-block;
+            font-size: 16px;
+            line-height: 16px;
+            margin: 0 15px;
+            padding: 10px 16px;
+            border-radius: 5px;
+            text-transform: capitalize;
+            color: var(--color-secondary2-anti1);
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+            .gallery > .filter > .item:hover,
+            .gallery > .filter > .item.active {
+                background: var(--color-primary);
+                color: var(--color-primary-anti);
+                transition: all 0.5s;
+            }
+
+
     .gallery > .list {
         display: inline-block;
         width: calc(100% + 30px);
         margin-left: -15px;
     }
         .gallery > .list > .work {
-            display: inline-block;
+            display: none;
             width: calc((100% - 90px) / 3);
             float: left;
             margin: 0 15px 30px 15px;
@@ -30,9 +57,11 @@
             position: relative;
             text-transform: capitalize;
             border-radius: 5px;
-
-
         }
+            .gallery > .list > .work.show {
+                display: inline-block;
+            }
+
             .gallery .work > img {
                 display: inline-block;
                 width: 100%;

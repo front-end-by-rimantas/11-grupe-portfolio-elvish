@@ -190,7 +190,7 @@ const works = [
         name: 'Backpack contents',
         title: ['ul elements', 'media'],
         photo: '6.jpg',
-        tags: ['webdesign', 'wordpress']
+        tags: ['wordpress']
     },
 ]
 

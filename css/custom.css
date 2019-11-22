@@ -291,10 +291,7 @@
 #education .row {
     margin-top: 30px;
 }
-#education .col-3 {
-    content: '';   
-}
-#education .col-6 {
+#education p {
     text-align: center;
     font-size: 18px;
     margin: 10px 0px;
@@ -445,10 +442,7 @@
 
 /************************************************************/
 /* GREAT PEOPLE */
-#greatpeople .col-3 {
-    content: '';   
-}
-#greatpeople .col-6 {
+#greatpeople p {
     text-align: center;
     font-size: 18px;
     margin: 10px 0px;
@@ -459,7 +453,6 @@
     width: 120px;
     height: 100px;
 }
-
 #greatpeople #block {
     display: inline-block;
     float: left;
@@ -500,10 +493,7 @@
 
 /************************************************************/
 /* SUBSCRIBE */
-#subscribe .col-3 {
-    content: '';   
-}
-#subscribe .col-6 {
+#subscribe p {
     text-align: center;
     font-size: 18px;
     margin: 10px 0px;
@@ -517,7 +507,6 @@
         display: inline-block;
         border-radius: 30px;
         padding: 13px;
-        /* padding-left: 26px; */
         width: 600px;
         font-size: 20px;
         text-align: left;
@@ -526,6 +515,7 @@
         background-color: var(--color-secondary1);
         color: var(--color-secondary1-anti2);
         border: solid 3px var(--color-secondary1);
+        position: relative;
     }    
     #sub input::placeholder {
         color: var(--color-secondary1-anti2);         
@@ -540,9 +530,7 @@
         padding: 13px 26px;
         border-radius: 30px;
         position: absolute;
-        right: 390px;
-        /* bottom: -2px; */
-        
+        right: 430px;       
     }    
     #sub a:hover {
         background-color: var(--color-primary-anti);

@@ -27,8 +27,8 @@ skillsScroll();
 renderServices( services );
 // statistika
 renderStatistics( statistics );
+startCount(statistics);
 window.addEventListener('scroll', statisticsScroll);
-statisticsScroll();
 // education
 renderEducationLeft( educationLeft );
 renderEducationRight( educationRight );
@@ -44,7 +44,7 @@ renderGrpp( greatList );
 // subscribe
 
 // our blog
-renderBlog( );
+renderBlog( blog_data );
 // contact
 
 // footer

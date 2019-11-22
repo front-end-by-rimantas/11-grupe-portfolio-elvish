@@ -207,45 +207,44 @@ function renderStatistics( list ) {
     return document.querySelector('#statistics-list').innerHTML = HTML;
 }
 
-function counterUp(list) {
-    let elements = document.querySelectorAll('#statistics-numbers'),
-        duration = 4000,
-        step = 50;
+function startCount() {
+    for ( let i=0; i < statistics.length; i++) {
+        let item = statistics[i];
         
-    let count = function () {
-    if (true) {
-            for (let i = 0; i < elements.length; i++) {
-                let grow = list[i].value_end > step ? Math.floor(list[i].value_end / step) : Math.floor(-data[i].number / step);
-                elements[i].textContent = `${list[i].value_start}`;
-                list[i].value_start += grow;
-  
-                if (list[i].value_start > list[i].value_end) {
-                    list[i].value_start = list[i].value_end;
-                    clearInterval(this);
+        let DOM = document.querySelectorAll("#statistics-numbers");
+            let AllDOM = DOM[i];
+            
+            let valueStart = item.value_start;
+            let valueStop = item.value_end;
+
+            if(valueStart = parseInt(AllDOM.innerHTML)) {
+            let interval = setInterval(time, 10);
+            function time() {
+                if (valueStart > valueStop) {
+                clearInterval(interval);
+                } 
+                else {
+                    AllDOM.innerHTML = valueStart = valueStart + 2;
                 }
             }
         }
-    };
-  
-    setInterval(count, duration / step);
-  }
+    }
+}
 
 function statisticsScroll() {
-    const myPosition = window.scrollY;
-    const windowHeight = window.innerHeight;
-    const scrollHeight = myPosition + windowHeight;
-    
-    const DOMskills = document.querySelector('#statistics');
-    const skillsPosition = DOMskills.offsetTop;
-    const skillsTopPadding = parseFloat( getComputedStyle( DOMskills ).paddingTop );
-    
-    const barHeight = DOMskills.querySelector('.cards').offsetHeight;
-    const barPosition = skillsPosition + skillsTopPadding + barHeight;
-    
-    if ( barPosition < scrollHeight ) {
-        counterUp( statistics )
+    let myPosition = window.scrollY;
+    // console.log(myPosition);
+    let windowHeight = window.innerHeight;
+    // console.log(windowHeight);
+    let scrollHeight = myPosition + windowHeight;
+    // console.log(scrollHeight);
+    let DOM = document.querySelector('#statistics-numbers');
+    // console.log(DOM);
+    let DOMPosition = DOM.offsetTop;
+    // console.log(DOMPosition);
+    if (DOMPosition < scrollHeight) {
+        startCount();    
     }
-    
     return;
 }
 // education
@@ -338,13 +337,28 @@ function renderGrpp( list ) {
 // subscribe
 
 // our blog
-function renderBlog( ) {
+function renderBlog( list ) {
     let HTML = '';
     
-    for ( let i=0; i<blog_data.length; i++) {
-        let item = blog_data[i];
-        
+    for ( let i=0; i<list.length; i++) {
+        let item = list[i];
 
+        if (item.icon.length == 1 && !item.video) {
+            HTML = HTML + `<div class="cards">
+            <div class="blog-image">
+                    <img src="${item.icon[0]}">
+            </div>
+            <div class="blog-info">
+                    <h3>${item.title}</h3>
+                    <a href="#">${item.tag}</a>
+                    <p>${item.date}</p> <a href="#">By ${item.author}</a>
+                    <p>${item.about}</p>
+                    <a href="${item.readLink}">Read more</a> 
+            </div>
+    </div>`;  
+        }
+
+        if (item.icon.length > 1) {
         HTML = HTML + `<div class="cards">
                 <div class="blog-image">
                         <img src="${item.icon[0]}">
@@ -357,10 +371,31 @@ function renderBlog( ) {
                         <a href="${item.readLink}">Read more</a> 
                 </div>
         </div>`;
+        }
+        if (item.video) {
+            HTML = HTML + `<div class="cards">
+                    <div class="blog-image">
+                    <div class="video-image">
+                    <img src="${item.icon[0]}">
+                    </div>
+                        <a target="_blank" href="${item.video}">
+                        <div class="play-image">
+                        <i class="fa fa-play"></i>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="blog-info">
+                            <h3>${item.title}</h3>
+                            <a href="#">${item.tag}</a>
+                            <p>${item.date}</p> <a href="#">By ${item.author}</a>
+                            <p>${item.about}</p>
+                            <a href="${item.readLink}">Read more</a> 
+                    </div>
+            </div>`;
+            }
             document.querySelector('#blog-list').innerHTML = HTML;
     }
-    return;
-    
+    return; 
 }
 // contact
 

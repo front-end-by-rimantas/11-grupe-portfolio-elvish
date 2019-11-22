@@ -95,25 +95,25 @@ const statistics = [
     {
         icon: '1.png',
         value_start: 4,
-        value_end: 654,
+        value_end: 150,
         title: 'Working Hours'
     },
     {
         icon: '2.png',
         value_start: 10,
-        value_end: 6400,
+        value_end: 568,
         title: 'Completed Projects'
     },
     {
         icon: '3.png',
         value_start: 201,
-        value_end: 2389,
+        value_end: 656,
         title: 'No. of Clients'
     },
     {
         icon: '4.png',
-        value_start: 4,
-        value_end: 653,
+        value_start: 6,
+        value_end: 356,
         title: 'Team Member'
     }
 ];
@@ -195,8 +195,9 @@ const blog_data = [
     },
     {
         icon: ['./img/our-blog/blog-2.jpg'],
-        title: 'There are many variations',
-        tag: "Lifestyle",
+        video: 'https://www.youtube.com/watch?v=5dsGWM5XGdg',
+        title: 'Contrary to popular belief',
+        tag: "Travel",
         date: '13 February 2018',
         author: "Envato",
         about: 'Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.',
@@ -204,8 +205,8 @@ const blog_data = [
     },
     {
         icon: ['./img/our-blog/blog-3.jpg','./img/our-blog/blog-4.jpg','./img/our-blog/blog-5.jpg'],
-        title: 'There are many variations',
-        tag: "Lifestyle",
+        title: 'Lorem ipsum is not simply',
+        tag: "Food & Drinks",
         date: '13 February 2018',
         author: "Envato",
         about: 'Sit sagittis vulputate laoreet sodales tortor nulla lobortis bibendum netus primis fames. Lobortis ultricies.',

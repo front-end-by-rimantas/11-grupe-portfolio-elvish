@@ -716,10 +716,10 @@
     padding: 30px;
     position: relative;
 }
-.btn-footer {
+#footer .btn-footer {
     position: absolute;
     border-radius: 10px;
-
+    padding: 2px 5px;
 }
 #footer .col-6 {
     display: inline-block;
@@ -729,13 +729,19 @@
     display: inline-block;
     color: var(--color-secondary1-anti2);
     font-size: 18px;
+    line-height: 42px;
 }
-#footer a {
+#footer #socials a {
     display: inline-block;
     float: right;
     text-decoration: none;
     padding: 10px;
     color: var(--color-secondary1-anti2);
+    font-size: 18px;
+    border: solid 1px var(--color-secondary1-anti2);
+    border-radius: 50%;
+
+    margin-left: 5px;
 }
 
 /************************************************************/

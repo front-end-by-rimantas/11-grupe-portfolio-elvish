@@ -35,6 +35,7 @@ renderEducationRight( educationRight );
 // hire me
 
 // our work
+renderGallery( works );
 
 // our clients
 

@@ -155,6 +155,44 @@ const educationRight = [
 // hire me
 
 // our work
+const works = [
+    {
+        name: 'studio & art',
+        title: ['ul elements', 'icons'],
+        photo: '1.jpg',
+        tags: ['webdesign', 'wordpress']
+    },
+    {
+        name: 'creatice & art',
+        title: ['illustrations'],
+        photo: '2.jpg',
+        tags: ['seo', 'webdesign']
+    },
+    {
+        name: 'open imagination',
+        title: ['media', 'icons'],
+        photo: '3.jpg',
+        tags: ['work']
+    },
+    {
+        name: 'locked steel gate',
+        title: ['graphics', 'ul elements'],
+        photo: '4.jpg',
+        tags: ['seo', 'webdesign']
+    },
+    {
+        name: 'mac sunglasses',
+        title: ['illustrations', 'graphics'],
+        photo: '5.jpg',
+        tags: ['seo', 'work']
+    },
+    {
+        name: 'Backpack contents',
+        title: ['ul elements', 'media'],
+        photo: '6.jpg',
+        tags: ['wordpress']
+    },
+]
 
 // our clients
 

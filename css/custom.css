@@ -503,11 +503,14 @@
     display: inline-block;
     margin-top: 20px;
 }
+#sub .col-6 {
+    position: relative;
+}
     #sub input {
         display: inline-block;
         border-radius: 30px;
         padding: 13px;
-        width: 600px;
+        width: 100%;
         font-size: 20px;
         text-align: left;
         border: none;
@@ -515,7 +518,8 @@
         background-color: var(--color-secondary1);
         color: var(--color-secondary1-anti2);
         border: solid 3px var(--color-secondary1);
-        position: relative;
+        
+        
     }    
     #sub input::placeholder {
         color: var(--color-secondary1-anti2);         
@@ -530,7 +534,9 @@
         padding: 13px 26px;
         border-radius: 30px;
         position: absolute;
-        right: 430px;       
+        float: left;
+        left: 76%;  
+        bottom: 3px;   
     }    
     #sub a:hover {
         background-color: var(--color-primary-anti);

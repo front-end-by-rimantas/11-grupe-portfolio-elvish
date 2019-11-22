@@ -337,13 +337,28 @@ function renderGrpp( list ) {
 // subscribe
 
 // our blog
-function renderBlog( ) {
+function renderBlog( list ) {
     let HTML = '';
     
-    for ( let i=0; i<blog_data.length; i++) {
-        let item = blog_data[i];
-        
+    for ( let i=0; i<list.length; i++) {
+        let item = list[i];
 
+        if (item.icon.length == 1 && !item.video) {
+            HTML = HTML + `<div class="cards">
+            <div class="blog-image">
+                    <img src="${item.icon[0]}">
+            </div>
+            <div class="blog-info">
+                    <h3>${item.title}</h3>
+                    <a href="#">${item.tag}</a>
+                    <p>${item.date}</p> <a href="#">By ${item.author}</a>
+                    <p>${item.about}</p>
+                    <a href="${item.readLink}">Read more</a> 
+            </div>
+    </div>`;  
+        }
+
+        if (item.icon.length > 1) {
         HTML = HTML + `<div class="cards">
                 <div class="blog-image">
                         <img src="${item.icon[0]}">
@@ -356,10 +371,31 @@ function renderBlog( ) {
                         <a href="${item.readLink}">Read more</a> 
                 </div>
         </div>`;
+        }
+        if (item.video) {
+            HTML = HTML + `<div class="cards">
+                    <div class="blog-image">
+                    <div class="video-image">
+                    <img src="${item.icon[0]}">
+                    </div>
+                        <a target="_blank" href="${item.video}">
+                        <div class="play-image">
+                        <i class="fa fa-play"></i>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="blog-info">
+                            <h3>${item.title}</h3>
+                            <a href="#">${item.tag}</a>
+                            <p>${item.date}</p> <a href="#">By ${item.author}</a>
+                            <p>${item.about}</p>
+                            <a href="${item.readLink}">Read more</a> 
+                    </div>
+            </div>`;
+            }
             document.querySelector('#blog-list').innerHTML = HTML;
     }
-    return;
-    
+    return; 
 }
 // contact
 

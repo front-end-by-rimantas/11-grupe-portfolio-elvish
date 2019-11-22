@@ -44,7 +44,7 @@ renderGrpp( greatList );
 // subscribe
 
 // our blog
-renderBlog( );
+renderBlog( blog_data );
 // contact
 
 // footer

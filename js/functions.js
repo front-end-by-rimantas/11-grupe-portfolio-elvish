@@ -343,7 +343,7 @@ function renderBlog( list ) {
     for ( let i=0; i<list.length; i++) {
         let item = list[i];
 
-        if (item.icon.length == 1 && !item.video) {
+        if (item.icon && !item.video&& !item.slide) {
             HTML = HTML + `<div class="cards">
             <div class="blog-image">
                     <img src="${item.icon[0]}">
@@ -358,10 +358,15 @@ function renderBlog( list ) {
     </div>`;  
         }
 
-        if (item.icon.length > 1) {
+        if (item.slide) {
         HTML = HTML + `<div class="cards">
-                <div class="blog-image">
-                        <img src="${item.icon[0]}">
+                <div class="blog-image" id="blog-slide">
+                        <i class="fa fa-chevron-left"></i>
+                        <div id="slide">
+                        <img id="image-change" src="${item.slide[0]}">
+                        </div>
+                        <i class="fa fa-chevron-right"></i>
+
                 </div>
                 <div class="blog-info">
                         <h3>${item.title}</h3>
@@ -406,6 +411,68 @@ function renderBlog( list ) {
     }
     return; 
 }
+
+let countSlide = 0;
+function blogSlideLeft (list) {
+    let HTML = '';
+
+    // issirenkam duomenu lista is objekto
+    for (let i = 0; i < list.length; i++) {
+        let item = list[i];
+        // console.log(item);
+
+    // surandam is duomenu listo mums reikiama elementa (slide)
+        if (item.slide) {
+            // console.log(item.slide.length);
+            // console.log(item.slide);
+            // console.log(item.slide[countSlide]);
+
+            
+            if (countSlide == 0) {
+                countSlide = item.slide.length;
+            }
+            countSlide = countSlide - 1;
+
+            // console.log(countSlide);
+
+            HTML = HTML + `
+            <img id="image-change" src="${item.slide[countSlide]}">
+            `;
+            
+           document.querySelector('#slide').innerHTML = HTML;   
+        }
+    }
+}
+
+function blogSlideRight (list) {
+    let HTML = '';
+
+    // issirenkam duomenu lista is objekto
+    for (let i = 0; i < list.length; i++) {
+        let item = list[i];
+        // console.log(item);
+
+    // surandam is duomenu listo mums reikiama elementa (slide)
+        if (item.slide) {
+
+            countSlide = countSlide + 1;
+            if (countSlide == item.slide.length) {
+                countSlide = 0
+            }
+            
+            // console.log(countRight);
+
+            HTML = HTML + `
+            <img id="image-change" src="${item.slide[countSlide]}">
+            `;
+            
+           document.querySelector('#slide').innerHTML = HTML;
+        //    console.log(HTML);
+            
+        }
+    }
+}
+
 // contact
 
 // footer

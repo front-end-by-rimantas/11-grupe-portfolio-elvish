@@ -784,6 +784,63 @@
 
 /************************************************************/
 /* CONTACT */
+#contact {
+    display: inline-block;
+    width: 100%;
+}
+#contact .col-6 > p {
+    display: inline-block;
+    width: 100%;
+    color: var(--color-secondary1-anti2);
+    margin: 10px 0;
+    font-size: 18px;
+}
+#contact .col-4 i {
+    display: inline-block;
+    font-size: 30px;
+}
+#contact .phone {
+    display: inline-block;
+    width: 100%;
+
+}
+#contact .email-input {
+    display: inline-block;
+    width: 100%;
+}
+#contact .address {
+    display: inline-block;
+    width: 100%;
+}
+#contact .col-8 {
+    display: inline-block;
+    text-align: left;
+}
+#contact .right-name {
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+#contact .right-name .name {
+    display: inline-block;
+}
+#contact .right-email {
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+#contact .right-email .email {
+    display: inline-block;
+}
+#contact label {
+    display: inline-block;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+#contact input {
+    display: inline-block;
+    width: 100%;
+}
 
 /************************************************************/
 

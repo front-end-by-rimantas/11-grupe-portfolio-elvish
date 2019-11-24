@@ -802,7 +802,16 @@
 #contact .phone {
     display: inline-block;
     width: 100%;
-
+}
+#contact .email {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+}
+#contact .address {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
 }
 #contact .email-input {
     display: inline-block;
@@ -826,8 +835,9 @@
 }
 #contact .right-email {
     display: inline-block;
-    width: 50%;
+    width: 40%;
     float: left;
+    margin-left: 10px;
 }
 #contact .right-email .email {
     display: inline-block;
@@ -835,12 +845,20 @@
 #contact label {
     display: inline-block;
     margin-bottom: 10px;
-    line-height: 20px;
+    font-size: 15px;
+    width: 100%;
 }
 #contact input {
     display: inline-block;
     width: 100%;
+    line-height: 30px;
+    
 }
+#contact input::placeholder {
+    padding-left: 5px;
+    font-size: 15px;
+}
+
 
 /************************************************************/
 

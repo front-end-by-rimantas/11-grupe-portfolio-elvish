@@ -713,13 +713,21 @@
 /************************************************************/
 /* FOOTER */
 #footer {
+    display: inline-block;
     padding: 30px;
     position: relative;
 }
 #footer .btn-footer {
     position: absolute;
-    border-radius: 10px;
-    padding: 2px 5px;
+    background-color: var(--color-primary);
+    color: var(--color-primary-anti);
+    border-radius: 2px;
+    font-size: 26px;
+    text-decoration: none;
+    padding: 5px 10px;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
 }
 #footer .col-6 {
     display: inline-block;

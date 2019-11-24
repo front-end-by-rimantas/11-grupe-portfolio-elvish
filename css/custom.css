@@ -705,6 +705,68 @@
     height: auto;
     border-radius: 10px;
 }
+#blog #blog-slide {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+
+}
+#blog #blog-slide i {
+    display: inline-block;
+    color: rgb(255, 254, 254);
+    cursor: pointer;
+    position: absolute;
+    font-size: 20px;
+    padding: 15px;
+
+    animation-name: slideBtn;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+#blog #blog-slide i:hover {
+    display: inline-block;
+    color: rgb(255, 254, 254);
+    background-color: rgba(0,0,0,0.1);
+    cursor: pointer;
+    position: absolute;
+    font-size: 20px;
+    transition: 0.5s;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 11px white;  
+}
+
+@keyframes slideBtn {
+    0%   {
+        display: inline-block;
+    color: rgb(255, 254, 254);
+    cursor: pointer;
+    position: absolute;
+    font-size: 20px;
+    padding: 15px;
+    }
+    100% {
+        display: inline-block;
+    color: rgb(255, 254, 254);
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    position: absolute;
+    font-size: 20px;
+    transition: 0.5s;
+    border-radius: 10px;
+    padding: 15px;
+    }
+  }
+#blog #blog-slide .fa-chevron-left {
+    top: 40%;
+    left:0px;
+}
+#blog #blog-slide .fa-chevron-right {
+    top: 40%;
+    right:0px;
+}
+
 #blog .blog-info h3 {
     display: inline-block;
     font-size: 25px;
@@ -749,7 +811,7 @@
 }
 
 /* LIGHTOBX */
-.lightbox {
+#blog .lightbox {
     display: none;
     position: fixed;
     top: 0;
@@ -758,19 +820,19 @@
     left: 0;
     z-index: 2;
 }
-    .lightbox.show {
+    #blog .lightbox.show {
         display: inline-block;
     }
-    .lightbox > .background {
+    #blog .lightbox > .background {
         display: inline-block;
         width: 100%;
         height: 100%;
         background-color: #000C;
     }
-    .lightbox > .content {
+    #blog .lightbox > .content {
         display: inline-block;
-        padding: 30px;
-        background-color: #fff;
+        padding: 10px;
+        background-color: #000C;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -778,7 +840,20 @@
         border-radius: 10px;
     }
 
+    @media (max-width: 900px) {
+        #blog .cards {
+            width: calc(100% - (20px));
+            padding: 20px 20px;
+        }
+        #blog .col-3 {
+            display: none;
+        }
+        #blog .col-6 {
+            width: 100%;
+            margin: 0;
+        }
 
+    }
 
 /************************************************************/
 

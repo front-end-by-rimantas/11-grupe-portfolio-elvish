@@ -38,7 +38,7 @@ renderEducationRight( educationRight );
 renderGallery( works );
 
 // our clients
-
+renderClients( clients );
 // great people
 renderGrpp( greatList );
 

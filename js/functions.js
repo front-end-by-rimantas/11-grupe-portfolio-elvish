@@ -391,6 +391,31 @@ function updateGallery(event){
 
 
 // our clients
+function renderClients( list ) {
+    let HTML = '';
+    let listHTML = '';
+
+
+    // render Clients
+   listHTML = 'LIST';
+
+    // render Controls
+
+    // connect
+    HTML += `<div class="clients">
+                <div class="list">
+                    ${listHTML}
+                </div>
+                <div class="controls">
+                    < --- >
+                </div>
+            </div>`;
+
+    // in to DOM
+    document.querySelector('#clients').innerHTML = HTML;
+
+    return;
+}
 
 // great people
 function renderGrpp( list ) {

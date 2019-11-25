@@ -799,20 +799,23 @@
     display: inline-block;
     font-size: 30px;
 }
-#contact .phone {
-    display: inline-block;
-    width: 100%;
+#contact .contact-form {
+
 }
-#contact .email {
-    display: inline-block;
-    width: 100%;
-    margin-top: 10px;
-}
-#contact .address {
-    display: inline-block;
-    width: 100%;
-    margin-top: 10px;
-}
+    #contact .phone {
+        display: inline-block;
+        width: 100%;
+    }
+    #contact .email {
+        display: inline-block;
+        width: 100%;
+        margin-top: 10px;
+    }
+    #contact .address {
+        display: inline-block;
+        width: 100%;
+        margin-top: 10px;
+    }
 #contact .email-input {
     display: inline-block;
     width: 100%;

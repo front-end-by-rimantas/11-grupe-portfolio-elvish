@@ -859,6 +859,172 @@
 
 /************************************************************/
 /* CONTACT */
+#contact {
+    display: inline-block;
+    width: 100%;
+}
+#contact .row:nth-child(3) {
+    margin-top: 20px;
+}
+#contact .col-6 > p {
+    display: inline-block;
+    width: 100%;
+    color: var(--color-secondary1-anti2);
+    margin: 10px 0;
+    font-size: 18px;
+}
+#contact .col-4 i {
+    display: inline-block;
+    width: 100%;
+    font-size: 30px;
+}
+#contact .col-4 h4 {
+    display: inline-block;
+    width: 100%;
+    margin: 5px 0;
+}
+    #contact .phone {
+        display: inline-block;
+        width: 100%;
+    }
+    #contact .email {
+        display: inline-block;
+        width: 100%;
+        margin-top: 20px;
+    }
+    #contact .address {
+        display: inline-block;
+        width: 100%;
+        margin-top: 20px;
+    }
+#contact .col-8 {
+    display: inline-block;
+    text-align: left;
+}
+    #contact .name-email {
+        display: inline-block;
+        width: 100%;
+    }
+        #contact .right-name {
+            display: inline-block;
+            width: 40%;
+            float: left;
+        }
+            #contact label {
+                display: inline-block;
+                margin-bottom: 10px;
+                font-size: 19px;
+                width: 100%;
+                font-weight: bold;
+            }
+            #contact input {
+                display: inline-block;
+                width: 100%;
+                line-height: 40px;
+                font-size: 20px;
+                
+            }
+            #contact input::placeholder {
+                padding-left: 5px;
+                font-size: 20px;
+            }
+    #contact .right-email {
+        display: inline-block;
+        width: 40%;
+        float: left;
+        margin-left: 10px;
+    }
+#contact .subject {
+    display: inline-block;
+        width: calc(80% + 10px);
+        margin-top: 10px;
+} 
+#contact .message {
+    display: inline-block;
+        margin-top: 10px;
+        width: calc(80% + 10px);
+        
+} 
+
+    #contact textarea {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 25px;
+            border: none;
+            border: 1px solid #ccc;
+            resize: vertical;
+            min-height: 100px;
+            max-height: 350px;
+        }
+
+    #contact textarea::placeholder {
+        padding-left: 5px;
+        font-size: 20px;
+    }
+#contact .contact-btn {
+    background-color: var(--color-primary);
+    color: var(--color-primary-anti);
+    padding: 15px 20px;
+    border-radius: 5px;
+    float: right;
+    font-size: 19px;
+    border: solid 2px var(--color-primary-anti);
+}
+#contact .contact-btn:hover {
+    background-color: var(--color-primary-anti);
+    color: var(--color-primary);
+    padding: 15px 20px;
+    border-radius: 5px;
+    float: right;
+    font-size: 19px;
+    border: solid 2px var(--color-primary);
+    transition: 1s;
+    cursor: pointer;
+}
+@media (max-width: 900px) {
+    #contact .col-3  {
+        display: none;
+    }
+    #contact .col-6  {
+        width: 100%;
+        margin: 0px;
+    }
+    #contact .subject  {
+        width: 100%;
+    }
+    #contact .message  {
+        width: 100%;
+    }
+    #contact textarea {
+        width: 100%;
+    }
+    #contact .right-name {
+        display: inline-block;
+        width: 100%;
+    }
+    #contact .right-email {
+        display: inline-block;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+   
+}
+@media (max-width: 600px) {
+    #contact .col-4  {
+        float: unset;
+        width: 100%;
+        margin: 0;
+    }
+    #contact .col-8  {
+        float: unset;
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+}
+
 
 /************************************************************/
 

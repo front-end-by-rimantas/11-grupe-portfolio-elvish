@@ -715,7 +715,6 @@
 #footer {
     display: inline-block;
     padding: 30px;
-    /* position: relative; */
 }
 #footer .btn-footer {
     position: fixed;
@@ -752,33 +751,13 @@
     border-radius: 50%;
     margin-left: 5px;
     text-align: center;
-    transition: transform .8s ease-in-out;
-    transition-property: rotate;
+    transition: transform 1s;
 }
     #footer #socials a:hover {
+        transform: rotate(360deg);
         border: solid 2px var(--color-secondary1-anti1);
         color: var(--color-secondary1-anti1);
-        
-        animation-name: onbtn;
-        animation-duration: 2s;
-   
-    }
-    @keyframes onbtn {
-        0% {
-            transform: rotate(0deg);
-            
-        }
-        50% {
-            /* animation-play-state: paused; */
-            transform: rotate(360deg);
-
-        }
-        100% {
-            transform: rotate(-360deg);
-            
-        }
-        
-     }
+    
     @media (max-width: 900px) {
         #footer .col-6 {
             width: 100%;

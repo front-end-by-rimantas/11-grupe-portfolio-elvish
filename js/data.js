@@ -242,7 +242,8 @@ const blog_data = [
         readLink: "#"
     },
     {
-        icon: ['./img/our-blog/blog-3.jpg','./img/our-blog/blog-4.jpg','./img/our-blog/blog-5.jpg'],
+        icon: ['./img/our-blog/blog-5.jpg'],
+        slide: ['./img/our-blog/blog-3.jpg','./img/our-blog/blog-4.jpg','./img/our-blog/blog-5.jpg'],
         title: 'Lorem ipsum is not simply',
         tag: "Food & Drinks",
         date: '13 February 2018',

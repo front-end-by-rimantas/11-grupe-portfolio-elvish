@@ -48,4 +48,5 @@ renderBlog( blog_data );
 // contact
 
 // footer
+window.addEventListener('scroll', footerBack);
 

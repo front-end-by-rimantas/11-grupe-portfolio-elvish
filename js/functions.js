@@ -400,4 +400,14 @@ function renderBlog( list ) {
 // contact
 
 // footer
-
+function footerBack() {
+    let myPosition = window.scrollY;
+    let HTML = document.querySelector('.btn-footer');
+    if (myPosition == 0) {
+        // console.log("pranyk");
+       HTML.classList.add('notShowBtn');
+    }if (myPosition > 0) {
+       HTML.classList.remove('notShowBtn');
+    }
+    return;
+}

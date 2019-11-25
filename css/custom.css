@@ -728,6 +728,9 @@
     bottom: 20px;
     cursor: pointer;
 }
+#footer .notShowBtn {
+    display: none;
+}
 #footer .col-6 {
     display: inline-block;
     padding: 10px;
@@ -757,7 +760,7 @@
         transform: rotate(360deg);
         border: solid 2px var(--color-secondary1-anti1);
         color: var(--color-secondary1-anti1);
-    
+    }
     @media (max-width: 900px) {
         #footer .col-6 {
             width: 100%;

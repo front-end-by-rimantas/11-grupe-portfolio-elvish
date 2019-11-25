@@ -58,9 +58,8 @@
             position: relative;
             text-transform: capitalize;
             border-radius: 5px;
-            transition: all 1s;
         }
-            /* nuodrauka kuri tuo metu rodoma ja atrusiavus */
+            /* nuotrauka kuri tuo metu rodoma ja atrusiavus */
             .gallery > .list > .work.show {
                 display: inline-block;
             }
@@ -168,3 +167,22 @@
                         left: -110%;
                         transition: all  0.8s;
                     }
+                    
+@media (max-width: 1100px) {
+    .gallery > .list > .work {
+        width: calc((100% - 60px) / 2);
+    }
+}
+@media (max-width: 900px) {
+    .gallery > .list > .work {
+        width: 100%;
+    }
+    .gallery > .filter > .snaige {
+        display: none;
+    }
+    .gallery > .filter > .item {
+        margin: 0;
+    }
+}
+
+

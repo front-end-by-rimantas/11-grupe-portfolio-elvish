@@ -155,6 +155,44 @@ const educationRight = [
 // hire me
 
 // our work
+const works = [
+    {
+        name: 'studio & art',
+        title: ['ul elements', 'icons'],
+        photo: '1.jpg',
+        tags: ['webdesign', 'wordpress']
+    },
+    {
+        name: 'creatice & art',
+        title: ['illustrations'],
+        photo: '2.jpg',
+        tags: ['seo', 'webdesign']
+    },
+    {
+        name: 'open imagination',
+        title: ['media', 'icons'],
+        photo: '3.jpg',
+        tags: ['work']
+    },
+    {
+        name: 'locked steel gate',
+        title: ['graphics', 'ul elements'],
+        photo: '4.jpg',
+        tags: ['seo', 'webdesign']
+    },
+    {
+        name: 'mac sunglasses',
+        title: ['illustrations', 'graphics'],
+        photo: '5.jpg',
+        tags: ['seo', 'work']
+    },
+    {
+        name: 'Backpack contents',
+        title: ['ul elements', 'media'],
+        photo: '6.jpg',
+        tags: ['wordpress']
+    },
+]
 
 // our clients
 
@@ -195,7 +233,7 @@ const blog_data = [
     },
     {
         icon: ['./img/our-blog/blog-2.jpg'],
-        video: 'https://www.youtube.com/watch?v=5dsGWM5XGdg',
+        video: 'https://player.vimeo.com/video/29440238?title=0&byline=0&portrait=0',
         title: 'Contrary to popular belief',
         tag: "Travel",
         date: '13 February 2018',
@@ -204,7 +242,8 @@ const blog_data = [
         readLink: "#"
     },
     {
-        icon: ['./img/our-blog/blog-3.jpg','./img/our-blog/blog-4.jpg','./img/our-blog/blog-5.jpg'],
+        icon: ['./img/our-blog/blog-5.jpg'],
+        slide: ['./img/our-blog/blog-3.jpg','./img/our-blog/blog-4.jpg','./img/our-blog/blog-5.jpg'],
         title: 'Lorem ipsum is not simply',
         tag: "Food & Drinks",
         date: '13 February 2018',

@@ -210,8 +210,7 @@
     #aboutme .row {
         display: inline-block;
     }
-
-#aboutme h3 {
+#aboutme .myskills h3 {
     display: inline-block;
     color: var(--color-secondary2-anti2);
     margin: 10px 0;
@@ -235,11 +234,12 @@
     margin: 20px 0;
 }
 
-#aboutme i {
+#aboutme .myskills i {
     display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
-    line-height: 25px;
+    line-height: 42px;
+    color: var(--color-secondary2-anti2);
 }
 #aboutme .progress-bar {
     display: inline-block;
@@ -248,6 +248,20 @@
 @media (max-width: 900px) {
     #aboutme .row .progress-bar {
         width: calc(100% - (40px));
+    }
+    #aboutme .col-2 {
+        display: none;
+    }
+    #aboutme .col-8 {
+        width: 100%;
+        margin: 0;
+    }
+    #aboutme .col-1 {
+        display: none;
+    }
+    #aboutme .col-10 {
+        width: 100%;
+        margin: 0;
     }
 }
 
@@ -261,27 +275,22 @@
    #aboutme .row .progress-bar {
         width: calc(100% - (40px));
     }
-    #aboutme img {
-        display: inline-block;
-        width: 100%;
-        margin: 20px 0;
-    }
-    #aboutme .row .col-10 i:nth-child(2) {
+    #aboutme .row .col-10 i:nth-child(4) {
         display: none;
     }
-    #aboutme i {
-        display: inline-block;
-        margin-left: 3px;
-        margin-right: 3px;
-        line-height: 25px;
+    #aboutme .row .col-10 h3:nth-child(5) {
+        width: 100%;
+        margin: 0;
     }
 }
 @media (max-width: 400px) {
     #aboutme .row .progress-bar {
             width: calc(100% - (40px));
         }
-        #aboutme .row .col-10 i:nth-child(1) {
-            display: none;
+        #aboutme img {
+            display: inline-block;
+            width: 100%;
+            margin: 20px 0;
         }
 }
 /************************************************************/

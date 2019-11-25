@@ -864,5 +864,62 @@
 
 /************************************************************/
 /* FOOTER */
-
+#footer {
+    display: inline-block;
+    padding: 30px;
+}
+#footer .btn-footer {
+    position: fixed;
+    background-color: var(--color-primary);
+    color: var(--color-primary-anti);
+    border-radius: 2px;
+    font-size: 26px;
+    text-decoration: none;
+    padding: 5px 10px;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+#footer .notShowBtn {
+    display: none;
+}
+#footer .col-6 {
+    display: inline-block;
+    padding: 10px;
+}
+#footer p {
+    display: inline-block;
+    color: var(--color-secondary1-anti2);
+    font-size: 18px;
+    line-height: 42px;
+}
+#footer #socials a {
+    display: inline-block;
+    float: right;
+    text-decoration: none;
+    padding: 10px;
+    color: var(--color-secondary1-anti2);
+    font-size: 18px;
+    line-height: 20px;
+    width: 42px;
+    border: solid 2px var(--color-secondary1-anti2);
+    border-radius: 50%;
+    margin-left: 5px;
+    text-align: center;
+    transition: transform 1s;
+}
+    #footer #socials a:hover {
+        transform: rotate(360deg);
+        border: solid 2px var(--color-secondary1-anti1);
+        color: var(--color-secondary1-anti1);
+    }
+    @media (max-width: 900px) {
+        #footer .col-6 {
+            width: 100%;
+            text-align: center;
+        }
+        #footer #socials .fa-google-plus {
+            margin-right: calc( (100% - 180px) / 2);
+        }
+    }  
 /************************************************************/

@@ -72,4 +72,5 @@ document.querySelector('#blog .fa-chevron-right').addEventListener('click', () =
 // contact
 
 // footer
+window.addEventListener('scroll', footerBack);
 

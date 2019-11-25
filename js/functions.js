@@ -332,7 +332,7 @@ function renderGallery( list ) {
                         <img src="./img/our-work/${work.photo}">
                         <div class="hover">
                             <h5>${work.name}</h5>
-                            <div class="title">${work.title.join(', ')}</div>
+                            <h6>${work.title.join(', ')}</h6>
                         </div>
                     </div>`; 
     }
@@ -358,7 +358,10 @@ function renderGallery( list ) {
 }
 
 function updateGallery(event){
+    const clickedElement = event.target;
     const clickedTag = event.target.textContent.trim();
+    document.querySelector('.gallery > .filter > .item.active').classList.remove('active');
+    clickedElement.classList.add('active');
     const DOMworks = document.querySelectorAll('.gallery > .list > .work');
 
     if ( clickedTag === 'all' ) {

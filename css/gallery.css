@@ -41,13 +41,14 @@
                 color: var(--color-primary-anti);
                 transition: all 0.5s;
             }
-
-
+/* --------------------------------------------------------------------*/
+    /* visos nuotraukos */
     .gallery > .list {
         display: inline-block;
         width: calc(100% + 30px);
         margin-left: -15px;
     }
+        /* viena nuotrauka */
         .gallery > .list > .work {
             display: none;
             width: calc((100% - 90px) / 3);
@@ -57,43 +58,102 @@
             position: relative;
             text-transform: capitalize;
             border-radius: 5px;
+            transition: all 1s;
         }
+            /* nuodrauka kuri tuo metu rodoma ja atrusiavus */
             .gallery > .list > .work.show {
                 display: inline-block;
             }
-
+            /* nuotraukos isvaizda pries ja pazymint */
             .gallery .work > img {
                 display: inline-block;
                 width: 100%;
+                position: relative;
+                transition: all 1s;
             }
-            .gallery .work > .hover {
-                display: none;
+                /* nuotraukos pasikeitimas atsiradus hoveriui */
+                .gallery .work:hover > img {
+                    transform: scale(1.1);
+                    transition: all 0.7s;
+                }
+            /* nuotraukos hoveris, pries pazymint yra 0px dydzio*/
+            .gallery .work > .hover::before {
+                content: '';
+                display: inline-block;
                 position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                background-color: rgba(0, 0, 0, 0.7);
-
-
+                transition: all 1s;
+                left: 50%;
+                top: 50%;
+                width: 0;
+                height: 0;
+                background-clip: content-box;
+                padding: 10px;
+                border-radius: 20px;
             }
-                .gallery .work:hover > .hover {
-                    display: inline-block;
-                }
-                .gallery .hover > h5 {
-                    display: inline-block;
-                    color: var(--color-primary-anti);
+                /* hoverio pasikeitimas atsiradus hoveriui */
+                .gallery .work:hover > .hover::before {
+                    background-color: rgba(0, 0, 0, 0.7);
                     width: 100%;
+                    height: 100%;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    transition: all 0.7s;
+                }
+
+                .gallery .work h5 {
+                    color: transparent;
+                    overflow: hidden;   /* nematomas kai nera 100% ribose */
                     font-size: 20px;
-                    line-height: 20px;
-                    
+                    line-height: 22px;
+                    text-align: right;
+                    top: 30px;
+                    right: 20px;
+                    position: absolute;
                 }
-                .gallery .hover > .title {
-                    display: inline-block;
-                    width: 100%;
+                    .gallery .work:hover h5 {
+                        color: var(--color-primary-anti);
+                    }
+                        .gallery .work h5::before {
+                            position: absolute;
+                            content: '';
+                            background: var(--color-primary-anti);
+                            width: 100%;
+                            right: 110%;
+                            top: 0;
+                            bottom: 0;
+                            transition: all 1s;
+                        }
+                        .gallery .work:hover h5::before {
+                            right: -110%;
+                            transition: all  1s;
+                        }
+                .gallery .hover > h6 {
+                    color: transparent;
+                    overflow: hidden;
                     font-size: 16px;
                     line-height: 16px;
-                    color: var(--color-secondary1-anti2);
-                    
+                    text-align: right;
+                    top: 60px;
+                    right: 20px;
+                    position: absolute;
+                    font-weight: 200;
                 }
-                
+                    .gallery .work:hover h6 {
+                        color: var(--color-secondary1-anti2);
+                    }
+                        .gallery .work h6::before {
+                            position: absolute;
+                            content: '';
+                            background: var(--color-primary-anti);
+                            width: 100%;
+                            left: 110%;
+                            top: 0;
+                            bottom: 0;
+                            transition: all 1s;
+                        }
+                        .gallery .work:hover h6::before {
+                            left: -110%;
+                            transition: all  1s;
+                        }

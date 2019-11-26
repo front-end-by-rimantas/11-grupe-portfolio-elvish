@@ -12,28 +12,69 @@
         width: 100%;
         margin-bottom: 20px;
     }
-        .clients > img {
-        display: inline-block;
-       
+        .clients > .list > .cliento {
+            display: none;
+            width: 100%;           
         }
-        .clients > .name {
-        display: inline-block; 
-        width: 100%;
-        margin-top: 15px; 
-        font-size: 20px;         
-        }
-        .clients > .link {
-        display: inline-block;  
-        width: 100%;  
-        margin-bottom: 15px;
-        }
-        .clients > .about {
-        display: inline-block; 
-        width: 50%;
-        margin: 0 25%;
+            .clients > .list > .cliento.show {
+                display: inline-block;          
+            }
+            .cliento > img {
+            display: inline-block;
+        
+            }
+            .cliento > .name {
+            display: inline-block; 
+            width: 100%;
+            margin-top: 15px; 
+            font-size: 20px;         
+            }
+            .cliento > .link {
+            display: inline-block;  
+            width: 100%;  
+            margin-bottom: 15px;
+            }
+            .cliento > .about {
+            display: inline-block; 
+            width: 40%;
+            margin: 0 30%;
 
-        }
-    .Clients > .controls {
+            }
+    .clients > .controls {
+        display: inline-block;       
+        width: auto;
+    }
+        /* .clients > .controls.show  {
+            display: inline-block;
+            float: left;
+            width: 40px;
+            height: 5px;
+        } */
+
+    .clients > .controls > .kirk {
         display: inline-block;
-        width: 100%;
+        float: left;
+        width: 15px;
+        height: 6px;
+        margin: 0 2px;
+        border-radius: 30px;
+        background-color: var(--color-secondary1-anti2);
+    }
+    .clients > .controls > .edward {
+        display: inline-block;
+        float: left;
+        width: 15px;
+        height: 6px;
+        margin: 0 2px;
+        border-radius: 30px;
+        background-color: var(--color-secondary1-anti2);
+    }
+    .clients > .controls > .antonio {
+        display: inline-block;
+        float: left;
+        width: 15px;
+        height: 6px;
+        margin: 0 2px;
+        border-radius: 30px;
+        background-color: var(--color-secondary1-anti2);
     }

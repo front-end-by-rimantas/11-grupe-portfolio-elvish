@@ -1,0 +1,39 @@
+/* OUR CLIENTS */
+.clients {
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    
+
+}
+
+    .clients > .list {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+        .clients > img {
+        display: inline-block;
+       
+        }
+        .clients > .name {
+        display: inline-block; 
+        width: 100%;
+        margin-top: 15px; 
+        font-size: 20px;         
+        }
+        .clients > .link {
+        display: inline-block;  
+        width: 100%;  
+        margin-bottom: 15px;
+        }
+        .clients > .about {
+        display: inline-block; 
+        width: 50%;
+        margin: 0 25%;
+
+        }
+    .Clients > .controls {
+        display: inline-block;
+        width: 100%;
+    }

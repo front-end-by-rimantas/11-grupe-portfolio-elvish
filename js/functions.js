@@ -396,8 +396,16 @@ function renderClients( list ) {
     let listHTML = '';
 
 
+
     // render Clients
-   listHTML = 'LIST';
+    const randomClients = list[ Math.floor(Math.random() * list.length) ];
+    
+    listHTML += `<div class="clients">
+                <img src="./img/statistics/${randomClients.photo}">             
+                <div class="name">${randomClients.name}</div>
+                <div class="link">${randomClients.link}</div>
+                <div class="about">${randomClients.about}</div>
+                </div>`;
 
     // render Controls
 

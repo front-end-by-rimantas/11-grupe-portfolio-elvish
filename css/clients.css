@@ -3,26 +3,22 @@
     display: inline-block;
     width: 100%;
     margin-top: 20px;
-    /* overflow: hidden; */
-
 }
-
     .clients > .list {
         display: inline-block;
         width: 100%;
         margin-bottom: 20px;
-        transition: all 2s;
+        overflow: hidden;
     }
         .clients > .list > .cliento {
-            display: inline-block;
+            display: none;
             width: 100%;           
         }
-        .clients > .list > .cliento .show {
+        .clients > .list > .cliento.show {
             display: inline-block;          
         }    
             .cliento > img {
-            display: inline-block;
-        
+            display: inline-block;       
             }
             .cliento > .name {
             display: inline-block; 
@@ -39,19 +35,11 @@
             display: inline-block; 
             width: 40%;
             margin: 0 30%;
-
             }
     .clients > .controls {
         display: inline-block;       
         width: auto;
     }
-        /* .clients > .controls.show  {
-            display: inline-block;
-            float: left;
-            width: 40px;
-            height: 5px;
-        } */
-
     .clients > .controls > .kirk,
     .clients > .controls > .antonio{
         display: inline-block;
@@ -62,9 +50,18 @@
         border-radius: 30px;
         background-color: var(--color-secondary1-anti2);
         cursor: pointer;   
-    }
-    
+    }   
     .clients > .controls > .edward {
+        display: inline-block;
+        float: left;
+        width: 14px;
+        height: 6px;
+        margin: 0 3px;
+        border-radius: 30px;
+        background-color: var(--color-primary-anti);
+    }   
+    .clients > .controls > .kirk:hover,
+    .clients > .controls > .antonio:hover{
         display: inline-block;
         float: left;
         width: 20px;
@@ -73,15 +70,12 @@
         border-radius: 30px;
         background-color: var(--color-primary-anti);
     }
-    
-    .clients > .controls > .kirk:hover,
-    .clients > .controls > .edward:hover,
-    .clients > .controls > .antonio:hover{
+    .clients > .controls > .edward:hover{
         display: inline-block;
         float: left;
         width: 20px;
         height: 6px;
-        margin: 0 3px;
+        margin: 0 0;
         border-radius: 30px;
         background-color: var(--color-primary-anti);
     }

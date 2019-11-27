@@ -458,7 +458,7 @@ function renderClients( list ) {
         .addEventListener('click', () => {
     // console.log('rodyti kirka');
 
-    let visible = DOMclients.querySelector('.cliento.show');
+    const visible = DOMclients.querySelector('.cliento.show');
     let index = visible.dataset.index;   
     visible.classList.remove('show');
     DOMclients.querySelector(`.cliento[data-index="0"]`).classList.add('show');
@@ -468,7 +468,7 @@ function renderClients( list ) {
         .addEventListener('click', () => {
     // console.log('rodyti edwarda');
     
-    let visible = DOMclients.querySelector('.cliento.show');
+    const visible = DOMclients.querySelector('.cliento.show');
     let index = visible.dataset.index;
     visible.classList.remove('show');
     DOMclients.querySelector(`.cliento[data-index="1"]`).classList.add('show');
@@ -478,7 +478,7 @@ function renderClients( list ) {
         .addEventListener('click', () => {
     // console.log('rodyti antonio');
 
-    let visible = DOMclients.querySelector('.cliento.show');
+    const visible = DOMclients.querySelector('.cliento.show');
     let index = visible.dataset.index;
     visible.classList.remove('show');
     DOMclients.querySelector(`.cliento[data-index="2"]`).classList.add('show');

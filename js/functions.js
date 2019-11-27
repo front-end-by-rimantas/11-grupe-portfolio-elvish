@@ -403,7 +403,8 @@ function renderClients( list ) {
     for ( let i=0; i<list.length; i++ ) {
         const cliento = list[i];
        
-        listHTML += `<div class="cliento ${i === defaultSelected ? 'show' : ''}">
+        listHTML += `<div class="cliento ${i === defaultSelected ? 'show' : ''}"
+                        data-index="${i}">
                     <img src="./img/statistics/${cliento.photo}">             
                     <div class="name">${cliento.name}</div>
                     <div class="link">${cliento.link}</div>
@@ -411,7 +412,6 @@ function renderClients( list ) {
                     </div>`;
                     
     }
-
 
     // random elementas
 
@@ -426,6 +426,16 @@ function renderClients( list ) {
 
     // render Controls
 
+    // const defaultSelected = Math.floor( list.length / 2 );
+    // for ( let i=0; i<list.length; i++ ) {
+    //     const control = list[i];
+       
+    //     listHTML += `<div class="control ${i === defaultSelected ? ':hover' : ''}">            
+    //                 <div class="name">${control.name}</div>
+    //                 </div>`;
+                    
+    // }
+
     // connect
     HTML += `<div class="clients">
                 <div class="list">
@@ -434,13 +444,46 @@ function renderClients( list ) {
 
                 <div class="controls">
                     <div class="kirk"></div>
+                    
                     <div class="edward"></div>
                     <div class="antonio"></div>
                 </div>
             </div>`;
 
     // in to DOM
-    document.querySelector('#clients').innerHTML = HTML;
+    const DOMclients = document.querySelector('#clients');
+    DOMclients.innerHTML = HTML;
+
+    // click
+    DOMclients.querySelector('.controls .kirk')
+        .addEventListener('click', () => {
+    // console.log('rodyti kirka');
+    const visible = DOMclients.querySelector('.cliento.show');
+    let index = visible.dataset.index;
+    
+    visible.classList.remove('show');
+    DOMclients.querySelector(`.cliento[data-index="0"]`).classList.add('show');
+
+    })
+    DOMclients.querySelector('.controls .edward')
+        .addEventListener('click', () => {
+    // console.log('rodyti edwarda');
+    const visible = DOMclients.querySelector('.cliento.show');
+    let index = visible.dataset.index;
+    
+    visible.classList.remove('show');
+    DOMclients.querySelector(`.cliento[data-index="1"]`).classList.add('show');
+
+    })
+    DOMclients.querySelector('.controls .antonio')
+        .addEventListener('click', () => {
+    // console.log('rodyti antonio');
+    const visible = DOMclients.querySelector('.cliento.show');
+    let index = visible.dataset.index;
+    
+    visible.classList.remove('show');
+    DOMclients.querySelector(`.cliento[data-index="2"]`).classList.add('show');
+    })
 
     return;
 }

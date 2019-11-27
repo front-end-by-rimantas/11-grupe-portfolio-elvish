@@ -3,7 +3,7 @@
     display: inline-block;
     width: 100%;
     margin-top: 20px;
-    
+    /* overflow: hidden; */
 
 }
 
@@ -11,15 +11,15 @@
         display: inline-block;
         width: 100%;
         margin-bottom: 20px;
-        overflow: hidden;
+        transition: all 2s;
     }
         .clients > .list > .cliento {
-            display: none;
+            display: inline-block;
             width: 100%;           
         }
-            .clients > .list > .cliento.show {
-                display: inline-block;          
-            }
+        .clients > .list > .cliento .show {
+            display: inline-block;          
+        }    
             .cliento > img {
             display: inline-block;
         

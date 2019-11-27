@@ -444,7 +444,6 @@ function renderClients( list ) {
 
                 <div class="controls">
                     <div class="kirk"></div>
-                    
                     <div class="edward"></div>
                     <div class="antonio"></div>
                 </div>
@@ -458,9 +457,9 @@ function renderClients( list ) {
     DOMclients.querySelector('.controls .kirk')
         .addEventListener('click', () => {
     // console.log('rodyti kirka');
-    const visible = DOMclients.querySelector('.cliento.show');
-    let index = visible.dataset.index;
-    
+
+    let visible = DOMclients.querySelector('.cliento.show');
+    let index = visible.dataset.index;   
     visible.classList.remove('show');
     DOMclients.querySelector(`.cliento[data-index="0"]`).classList.add('show');
 
@@ -468,9 +467,9 @@ function renderClients( list ) {
     DOMclients.querySelector('.controls .edward')
         .addEventListener('click', () => {
     // console.log('rodyti edwarda');
-    const visible = DOMclients.querySelector('.cliento.show');
-    let index = visible.dataset.index;
     
+    let visible = DOMclients.querySelector('.cliento.show');
+    let index = visible.dataset.index;
     visible.classList.remove('show');
     DOMclients.querySelector(`.cliento[data-index="1"]`).classList.add('show');
 
@@ -478,11 +477,12 @@ function renderClients( list ) {
     DOMclients.querySelector('.controls .antonio')
         .addEventListener('click', () => {
     // console.log('rodyti antonio');
-    const visible = DOMclients.querySelector('.cliento.show');
+
+    let visible = DOMclients.querySelector('.cliento.show');
     let index = visible.dataset.index;
-    
     visible.classList.remove('show');
     DOMclients.querySelector(`.cliento[data-index="2"]`).classList.add('show');
+    
     })
 
     return;

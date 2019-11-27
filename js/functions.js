@@ -394,6 +394,56 @@ function updateGallery(event){
 
 
 // our clients
+function renderClients( list ) {
+    let HTML = '';
+    let listHTML = '';
+
+    // render Clients
+    const defaultSelected = Math.floor( list.length / 2 );
+    for ( let i=0; i<list.length; i++ ) {
+        const cliento = list[i];
+       
+        listHTML += `<div class="cliento ${i === defaultSelected ? 'show' : ''}">
+                    <img src="./img/statistics/${cliento.photo}">             
+                    <div class="name">${cliento.name}</div>
+                    <div class="link">${cliento.link}</div>
+                    <div class="about">${cliento.about}</div>
+                    </div>`;
+                    
+    }
+
+
+    // random elementas
+
+    // const randomCliento = list[ Math.floor(Math.random() * list.length) ];
+    
+    // listHTML += `<div class="cliento">
+    //             <img src="./img/statistics/${randomCliento.photo}">             
+    //             <div class="name">${randomCliento.name}</div>
+    //             <div class="link">${randomCliento.link}</div>
+    //             <div class="about">${randomCliento.about}</div>
+    //             </div>`;
+
+    // render Controls
+
+    // connect
+    HTML += `<div class="clients">
+                <div class="list">
+                    ${listHTML}
+                </div>
+
+                <div class="controls">
+                    <div class="kirk"></div>
+                    <div class="edward"></div>
+                    <div class="antonio"></div>
+                </div>
+            </div>`;
+
+    // in to DOM
+    document.querySelector('#clients').innerHTML = HTML;
+
+    return;
+}
 
 // great people
 function renderGrpp( list ) {

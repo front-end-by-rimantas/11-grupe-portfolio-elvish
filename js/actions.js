@@ -27,7 +27,6 @@ skillsScroll();
 renderServices( services );
 // statistika
 renderStatistics( statistics );
-startCount(statistics);
 window.addEventListener('scroll', statisticsScroll);
 // education
 renderEducationLeft( educationLeft );

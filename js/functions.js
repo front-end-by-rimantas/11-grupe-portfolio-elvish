@@ -388,7 +388,28 @@ function updateGallery(event){
     }
     return;
 }
+// function openGallery(list){
+//     let HTML = '';
+    
+//     for ( let i=0; i<list.length; i++) {
+//         let work = list[i];
+        
 
+//     HTML += `<div class="lightbox">
+//             <div class="background"></div>
+//             <div class="content">
+//                 <iframe 
+//                     src="${work.photo}" 
+//                     width="700" 
+//                     height="500" 
+//                     frameborder="0" 
+//                     allow="autoplay; fullscreen" 
+//                     allowfullscreen>
+//                 </iframe>
+//             </div>
+//             </div>`;
+//     }
+// }
 
 
 

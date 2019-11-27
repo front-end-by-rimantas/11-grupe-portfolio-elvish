@@ -69,7 +69,7 @@
 
 @media (max-width: 900px) {
     #main_header.mobile-show {
-        /* height: 100vh; */
+
     }
         #main_header i.fa-bars,
         #main_header.mobile-show i.fa-times {
@@ -101,6 +101,53 @@
                     height: 6px;
                     width: 6px;
                     background: var(--color-primary-anti);
+                    border-radius: 50%;             
+                    z-index: 1;
+                }
+}
+@media (max-width: 600px) {
+    #main_header {
+        background-color: var(--color-secondary2);
+    }
+    #main_header.mobile-show {
+        background-color: var(--color-secondary2);
+    }
+        #main_header .Elvish_name {
+            color: var(--color-secondary2-anti1);
+        }
+        #main_header i.fa-bars,
+        #main_header.mobile-show i.fa-times {
+            display: inline-block;
+            color: var(--color-secondary2-anti1);
+        }
+        #main_header nav {
+            display: none;
+            width: 100%;
+        }
+            #main_header.mobile-show nav {
+                display: inline-block;
+            }
+            #main_header.mobile-show nav > a {
+                width: 100%;
+                padding: 0 0 2px 10px;
+                color: var(--color-secondary2-anti1);
+            }
+                #main_header.mobile-show nav > a:hover,
+                #main_header.mobile-show nav > a.active {
+                    padding-bottom: 2px;
+                    color: var(--color-secondary2-anti1);
+                }
+                #main_header.mobile-show nav > a:hover::before,
+                #main_header.mobile-show nav > a.active::before {
+                    padding-bottom: 0;
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    bottom: 20px;
+                    left: -5px;
+                    height: 6px;
+                    width: 6px;
+                    background: var(--color-secondary2-anti1);
                     border-radius: 50%;             
                     z-index: 1;
                 }

@@ -3,13 +3,19 @@
 // header
 renderHeader( 'header', headerlinks );
 
-const hamberger = document.querySelector('#main_header .fa-bars')
+const hamberger = document.querySelector('#main_header .fa-bars');
 const header = document.querySelector('#main_header');
 
 hamberger.addEventListener('click', () => {    
     header.classList.toggle('mobile-show');
 ;})
+//-------BANDAU ISJUNGTI HEADERI KAI NUVAZIUOJU KUR NORIU
+const issijungiu = document.querySelector('#main_header nav');
 
+issijungiu.addEventListener('click', () => {    
+    header.classList.remove('mobile-show');
+;})
+//---------------------------------------------------------
 window.addEventListener('scroll', headerScroll);
 headerScroll();
 

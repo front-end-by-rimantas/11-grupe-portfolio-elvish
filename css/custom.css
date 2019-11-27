@@ -689,6 +689,11 @@
 
 /************************************************************/
 /* OUR BLOG */
+#blog #blog-ico {
+    display: inline-block;
+    cursor: pointer;
+}
+
 #blog .cards {
     display: inline-block;
     width: calc((100% - 60px) / 3);
@@ -857,7 +862,7 @@
     margin-bottom: 15px;
 }
 
-/* LIGHTOBX */
+/* LIGHTOBX VID */
 #blog .lightbox {
     display: none;
     position: fixed;
@@ -913,6 +918,63 @@
         }
 
     }
+
+/* LIGHTOBX IMG */
+    #blog .lightboxImg {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+    }
+        #blog .lightboxImg.show {
+            display: inline-block;
+        }
+        #blog .lightboxImg > .background {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background-color: #000C;
+        }
+        #blog .lightboxImg > .content {
+            display: inline-block;
+            padding: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+        }
+        #blog .lightboxImg > .content img {
+            display: inline-block;
+            width: 800px;
+            height: 600px; 
+        }
+    
+        @media (max-width: 900px) {
+            #blog .cards {
+                width: calc(100% - (20px));
+                padding: 20px 20px;
+            }
+            #blog .col-3 {
+                display: none;
+            }
+            #blog .col-6 {
+                width: 100%;
+                margin: 0;
+            }
+            #blog .lightboxImg > .content {
+                width: 100%;
+            }
+            #blog .lightboxImg > .content img {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+            }
+    
+        }
 
 /************************************************************/
 

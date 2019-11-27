@@ -46,7 +46,7 @@ renderGrpp( greatList );
 
 // our blog
 renderBlog( blog_data );
-/* lightbox */
+/* lightbox video */
 document.querySelector('#blog-list .play-image').addEventListener('click', () => {
     document.querySelector('.lightbox').classList.add('show')
 })
@@ -61,6 +61,22 @@ document.onkeydown = function(evt) {
         document.querySelector('.lightbox').classList.remove('show')
     }
 };
+/* lightbox img */
+document.querySelector('#blog-list #blog-ico').addEventListener('click', () => {
+    document.querySelector('.lightboxImg').classList.add('show')
+})
+
+document.querySelector('.lightboxImg > .background').addEventListener('click', ()=>{
+    document.querySelector('.lightboxImg').classList.remove('show')
+})
+
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    if (evt.keyCode == 27) {
+        document.querySelector('.lightboxImg').classList.remove('show')
+    }
+};
+
 /* slide control */
 document.querySelector('#blog .fa-chevron-left').addEventListener('click', () => {
     blogSlideLeft (blog_data);

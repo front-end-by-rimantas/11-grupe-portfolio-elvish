@@ -333,9 +333,16 @@ function renderGallery( list ) {
                             <h5>${work.name}</h5>
                             <h6>${work.title.join(', ')}</h6>
                         </div>
-                    </div>`; 
-    }
+                    </div> 
 
+                    <div class="lightboxgallery">
+                        <div class="background"></div>
+                        <div class="content">
+                            <img src="./img/our-work/${work.photo}">
+                        </div>
+                    </div>`;
+    }
+    
     HTML = `<div class="gallery">
                 <div class="filter">
                     ${filterHTML}
@@ -388,30 +395,6 @@ function updateGallery(event){
     }
     return;
 }
-// function openGallery(list){
-//     let HTML = '';
-    
-//     for ( let i=0; i<list.length; i++) {
-//         let work = list[i];
-        
-
-//     HTML += `<div class="lightbox">
-//             <div class="background"></div>
-//             <div class="content">
-//                 <iframe 
-//                     src="${work.photo}" 
-//                     width="700" 
-//                     height="500" 
-//                     frameborder="0" 
-//                     allow="autoplay; fullscreen" 
-//                     allowfullscreen>
-//                 </iframe>
-//             </div>
-//             </div>`;
-//     }
-// }
-
-
 
 
 // our clients

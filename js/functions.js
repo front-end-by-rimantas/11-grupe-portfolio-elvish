@@ -415,6 +415,56 @@ function updateGallery(event){
 
 
 // our clients
+function renderClients( list ) {
+    let HTML = '';
+    let listHTML = '';
+
+    // render Clients
+    const defaultSelected = Math.floor( list.length / 2 );
+    for ( let i=0; i<list.length; i++ ) {
+        const cliento = list[i];
+       
+        listHTML += `<div class="cliento ${i === defaultSelected ? 'show' : ''}">
+                    <img src="./img/statistics/${cliento.photo}">             
+                    <div class="name">${cliento.name}</div>
+                    <div class="link">${cliento.link}</div>
+                    <div class="about">${cliento.about}</div>
+                    </div>`;
+                    
+    }
+
+
+    // random elementas
+
+    // const randomCliento = list[ Math.floor(Math.random() * list.length) ];
+    
+    // listHTML += `<div class="cliento">
+    //             <img src="./img/statistics/${randomCliento.photo}">             
+    //             <div class="name">${randomCliento.name}</div>
+    //             <div class="link">${randomCliento.link}</div>
+    //             <div class="about">${randomCliento.about}</div>
+    //             </div>`;
+
+    // render Controls
+
+    // connect
+    HTML += `<div class="clients">
+                <div class="list">
+                    ${listHTML}
+                </div>
+
+                <div class="controls">
+                    <div class="kirk"></div>
+                    <div class="edward"></div>
+                    <div class="antonio"></div>
+                </div>
+            </div>`;
+
+    // in to DOM
+    document.querySelector('#clients').innerHTML = HTML;
+
+    return;
+}
 
 // great people
 function renderGrpp( list ) {
@@ -456,19 +506,28 @@ function renderBlog( list ) {
         let item = list[i];
 
         if (item.icon && !item.video&& !item.slide) {
-            HTML = HTML + `<div class="cards">
-            <div class="blog-image">
-                    <img src="${item.icon[0]}">
-            </div>
+            HTML = HTML + `
+            <div class="cards">
+                <div class="blog-image" id="blog-ico">
+                        <img src="${item.icon[0]}">
+                </div>
             <div class="blog-info">
                     <h3>${item.title}</h3>
                     <a href="#">${item.tag}</a>
                     <p>${item.date}</p> <a href="#">By ${item.author}</a>
                     <p>${item.about}</p>
                     <a href="${item.readLink}">Read more</a> 
+                    </div>
             </div>
-    </div>`;  
-        }
+
+            <div class="lightboxImg">
+                <div class="background">
+                </div>
+                <div class="content">
+                    <img src="${item.icon[0]}"</img>
+                </div>
+            </div>
+            `;}
 
         if (item.slide) {
         HTML = HTML + `<div class="cards">

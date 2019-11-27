@@ -23,6 +23,10 @@
     text-align: center;
 }
 
+span {
+    font-weight: lighter;
+}
+
 .container .row h2 {
     display: inline-block;
     width: 100%;
@@ -547,7 +551,14 @@
 
 /************************************************************/
 /* OUR CLIENTS */
-
+#client {
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/bg/img-3.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+    color: var(--color-primary-anti);
+}
 /************************************************************/
 
 /************************************************************/
@@ -682,6 +693,11 @@
 
 /************************************************************/
 /* OUR BLOG */
+#blog #blog-ico {
+    display: inline-block;
+    cursor: pointer;
+}
+
 #blog .cards {
     display: inline-block;
     width: calc((100% - 60px) / 3);
@@ -735,7 +751,7 @@
     display: inline-block;
     color:white;
     font-size: 30px;
-    margin-top:calc((100% - 40px) / 2);
+    margin-top:calc((100% - 30px) / 2);
     text-align: center;
 }
 #blog .blog-image img {
@@ -850,7 +866,7 @@
     margin-bottom: 15px;
 }
 
-/* LIGHTOBX */
+/* LIGHTOBX VID */
 #blog .lightbox {
     display: none;
     position: fixed;
@@ -907,176 +923,67 @@
 
     }
 
+/* LIGHTOBX IMG */
+    #blog .lightboxImg {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+    }
+        #blog .lightboxImg.show {
+            display: inline-block;
+        }
+        #blog .lightboxImg > .background {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background-color: #000C;
+        }
+        #blog .lightboxImg > .content {
+            display: inline-block;
+            padding: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+        }
+        #blog .lightboxImg > .content img {
+            display: inline-block;
+            width: 800px;
+            height: 600px; 
+        }
+    
+        @media (max-width: 900px) {
+            #blog .cards {
+                width: calc(100% - (20px));
+                padding: 20px 20px;
+            }
+            #blog .col-3 {
+                display: none;
+            }
+            #blog .col-6 {
+                width: 100%;
+                margin: 0;
+            }
+            #blog .lightboxImg > .content {
+                width: 100%;
+            }
+            #blog .lightboxImg > .content img {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+            }
+    
+        }
+
 /************************************************************/
 
 /************************************************************/
 /* CONTACT */
-#contact {
-    display: inline-block;
-    width: 100%;
-}
-#contact .row:nth-child(3) {
-    margin-top: 20px;
-}
-#contact .col-6 > p {
-    display: inline-block;
-    width: 100%;
-    color: var(--color-secondary1-anti2);
-    margin: 10px 0;
-    font-size: 18px;
-}
-#contact .col-4 i {
-    display: inline-block;
-    width: 100%;
-    font-size: 30px;
-}
-#contact .col-4 h4 {
-    display: inline-block;
-    width: 100%;
-    margin: 5px 0;
-}
-    #contact .phone {
-        display: inline-block;
-        width: 100%;
-    }
-    #contact .email {
-        display: inline-block;
-        width: 100%;
-        margin-top: 20px;
-    }
-    #contact .address {
-        display: inline-block;
-        width: 100%;
-        margin-top: 20px;
-    }
-#contact .col-8 {
-    display: inline-block;
-    text-align: left;
-}
-    #contact .name-email {
-        display: inline-block;
-        width: 100%;
-    }
-        #contact .right-name {
-            display: inline-block;
-            width: 40%;
-            float: left;
-        }
-            #contact label {
-                display: inline-block;
-                margin-bottom: 10px;
-                font-size: 19px;
-                width: 100%;
-                font-weight: bold;
-            }
-            #contact input {
-                display: inline-block;
-                width: 100%;
-                line-height: 40px;
-                font-size: 20px;
-                
-            }
-            #contact input::placeholder {
-                padding-left: 5px;
-                font-size: 20px;
-            }
-    #contact .right-email {
-        display: inline-block;
-        width: 40%;
-        float: left;
-        margin-left: 10px;
-    }
-#contact .subject {
-    display: inline-block;
-        width: calc(80% + 10px);
-        margin-top: 10px;
-} 
-#contact .message {
-    display: inline-block;
-        margin-top: 10px;
-        width: calc(80% + 10px);
-        
-} 
-
-    #contact textarea {
-            display: inline-block;
-            width: 100%;
-            margin-bottom: 20px;
-            font-size: 20px;
-            line-height: 25px;
-            border: none;
-            border: 1px solid #ccc;
-            resize: vertical;
-            min-height: 100px;
-            max-height: 350px;
-        }
-
-    #contact textarea::placeholder {
-        padding-left: 5px;
-        font-size: 20px;
-    }
-#contact .contact-btn {
-    background-color: var(--color-primary);
-    color: var(--color-primary-anti);
-    padding: 15px 20px;
-    border-radius: 5px;
-    float: right;
-    font-size: 19px;
-    border: solid 2px var(--color-primary-anti);
-}
-#contact .contact-btn:hover {
-    background-color: var(--color-primary-anti);
-    color: var(--color-primary);
-    padding: 15px 20px;
-    border-radius: 5px;
-    float: right;
-    font-size: 19px;
-    border: solid 2px var(--color-primary);
-    transition: 1s;
-    cursor: pointer;
-}
-@media (max-width: 900px) {
-    #contact .col-3  {
-        display: none;
-    }
-    #contact .col-6  {
-        width: 100%;
-        margin: 0px;
-    }
-    #contact .subject  {
-        width: 100%;
-    }
-    #contact .message  {
-        width: 100%;
-    }
-    #contact textarea {
-        width: 100%;
-    }
-    #contact .right-name {
-        display: inline-block;
-        width: 100%;
-    }
-    #contact .right-email {
-        display: inline-block;
-        width: 100%;
-        margin-left: 0px;
-        margin-top: 10px;
-    }
-   
-}
-@media (max-width: 600px) {
-    #contact .col-4  {
-        float: unset;
-        width: 100%;
-        margin: 0;
-    }
-    #contact .col-8  {
-        float: unset;
-        width: 100%;
-        margin: 10px 0 0 0;
-    }
-}
-
 
 /************************************************************/
 

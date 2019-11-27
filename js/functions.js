@@ -506,19 +506,28 @@ function renderBlog( list ) {
         let item = list[i];
 
         if (item.icon && !item.video&& !item.slide) {
-            HTML = HTML + `<div class="cards">
-            <div class="blog-image">
-                    <img src="${item.icon[0]}">
-            </div>
+            HTML = HTML + `
+            <div class="cards">
+                <div class="blog-image" id="blog-ico">
+                        <img src="${item.icon[0]}">
+                </div>
             <div class="blog-info">
                     <h3>${item.title}</h3>
                     <a href="#">${item.tag}</a>
                     <p>${item.date}</p> <a href="#">By ${item.author}</a>
                     <p>${item.about}</p>
                     <a href="${item.readLink}">Read more</a> 
+                    </div>
             </div>
-    </div>`;  
-        }
+
+            <div class="lightboxImg">
+                <div class="background">
+                </div>
+                <div class="content">
+                    <img src="${item.icon[0]}"</img>
+                </div>
+            </div>
+            `;}
 
         if (item.slide) {
         HTML = HTML + `<div class="cards">

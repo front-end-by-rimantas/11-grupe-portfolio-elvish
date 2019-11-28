@@ -42,6 +42,36 @@ renderEducationRight( educationRight );
 // our work
 renderGallery( works );
 
+// lightbox
+const DOMgalery = document.querySelectorAll('#gallery .work .hover');
+const DOMlightboxgallery = document.querySelectorAll('.lightboxgallery');
+const DOMbackground = document.querySelectorAll('.background');
+
+    for(let i=0; i<DOMgalery.length; i++){
+        DOMgalery[i].addEventListener('click', () => {
+            DOMlightboxgallery[i].classList.add('showw') 
+        }) 
+        
+        DOMbackground[i].addEventListener('click', () => {
+            DOMlightboxgallery[i].classList.remove('showw') 
+        })  
+    }
+    
+//     document.querySelector('#gallery .work .hover').addEventListener('click', () => {
+//     document.querySelector('.lightboxgallery').classList.add('showw')   
+// })
+
+//     document.querySelector('.lightboxgallery > .background').addEventListener('click', ()=>{
+//     document.querySelector('.lightboxgallery').classList.remove('showw')
+// })
+
+//     document.onkeydown = function(evt) {
+//     evt = evt || window.event;
+//     if (evt.keyCode == 27) {
+//         document.querySelector('.lightboxgallery').classList.remove('showw')
+//     }
+// };
+
 // our clients
 renderClients( clients );
 

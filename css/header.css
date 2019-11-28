@@ -69,7 +69,6 @@
 
 @media (max-width: 900px) {
     #main_header.mobile-show {
-        /* height: 100vh; */
     }
         #main_header i.fa-bars,
         #main_header.mobile-show i.fa-times {
@@ -103,5 +102,31 @@
                     background: var(--color-primary-anti);
                     border-radius: 50%;             
                     z-index: 1;
+                }
+}
+@media (max-width: 600px) {
+    #main_header {
+        background-color: var(--color-secondary2);
+    }
+    #main_header.mobile-show {
+        background-color: var(--color-secondary2);
+    }
+        #main_header .Elvish_name {
+            color: var(--color-secondary2-anti1);
+        }
+        #main_header i.fa-bars,
+        #main_header.mobile-show i.fa-times {
+            color: var(--color-secondary2-anti1);
+        }
+            #main_header.mobile-show nav > a {
+                color: var(--color-secondary2-anti1);
+            }
+                #main_header.mobile-show nav > a:hover,
+                #main_header.mobile-show nav > a.active {
+                    color: var(--color-secondary2-anti1);
+                }
+                #main_header.mobile-show nav > a:hover::before,
+                #main_header.mobile-show nav > a.active::before {
+                    background: var(--color-secondary2-anti1);
                 }
 }

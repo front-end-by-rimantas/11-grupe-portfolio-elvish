@@ -333,9 +333,16 @@ function renderGallery( list ) {
                             <h5>${work.name}</h5>
                             <h6>${work.title.join(', ')}</h6>
                         </div>
-                    </div>`; 
-    }
+                    </div> 
 
+                    <div class="lightboxgallery">
+                        <div class="background"></div>
+                        <div class="content">
+                            <img src="./img/our-work/${work.photo}">
+                        </div>
+                    </div>`;
+    }
+    
     HTML = `<div class="gallery">
                 <div class="filter">
                     ${filterHTML}
@@ -390,10 +397,100 @@ function updateGallery(event){
 }
 
 
-
-
-
 // our clients
+function renderClients( list ) {
+    let HTML = '';
+    let listHTML = '';
+
+    // render Clients
+    const defaultSelected = Math.floor( list.length / 2 );
+    for ( let i=0; i<list.length; i++ ) {
+        const cliento = list[i];
+       
+        listHTML += `<div class="cliento ${i === defaultSelected ? 'show' : ''}"
+                        data-index="${i}">
+                    <img src="./img/statistics/${cliento.photo}">             
+                    <div class="name">${cliento.name}</div>
+                    <div class="link">${cliento.link}</div>
+                    <div class="about">${cliento.about}</div>
+                    </div>`;
+                    
+    }
+
+    // random elementas
+
+    // const randomCliento = list[ Math.floor(Math.random() * list.length) ];
+    
+    // listHTML += `<div class="cliento">
+    //             <img src="./img/statistics/${randomCliento.photo}">             
+    //             <div class="name">${randomCliento.name}</div>
+    //             <div class="link">${randomCliento.link}</div>
+    //             <div class="about">${randomCliento.about}</div>
+    //             </div>`;
+
+    // render Controls
+
+    // const defaultSelected = Math.floor( list.length / 2 );
+    // for ( let i=0; i<list.length; i++ ) {
+    //     const control = list[i];
+       
+    //     listHTML += `<div class="control ${i === defaultSelected ? ':hover' : ''}">            
+    //                 <div class="name">${control.name}</div>
+    //                 </div>`;
+                    
+    // }
+
+    // connect
+    HTML += `<div class="clients">
+                <div class="list">
+                    ${listHTML}
+                </div>
+
+                <div class="controls">
+                    <div class="kirk"></div>
+                    <div class="edward"></div>
+                    <div class="antonio"></div>
+                </div>
+            </div>`;
+
+    // in to DOM
+    const DOMclients = document.querySelector('#clients');
+    DOMclients.innerHTML = HTML;
+
+    // click
+    DOMclients.querySelector('.controls .kirk')
+        .addEventListener('click', () => {
+    // console.log('rodyti kirka');
+
+    const visible = DOMclients.querySelector('.cliento.show');
+    let index = visible.dataset.index;   
+    visible.classList.remove('show');
+    DOMclients.querySelector(`.cliento[data-index="0"]`).classList.add('show');
+
+    })
+    DOMclients.querySelector('.controls .edward')
+        .addEventListener('click', () => {
+    // console.log('rodyti edwarda');
+    
+    const visible = DOMclients.querySelector('.cliento.show');
+    let index = visible.dataset.index;
+    visible.classList.remove('show');
+    DOMclients.querySelector(`.cliento[data-index="1"]`).classList.add('show');
+
+    })
+    DOMclients.querySelector('.controls .antonio')
+        .addEventListener('click', () => {
+    // console.log('rodyti antonio');
+
+    const visible = DOMclients.querySelector('.cliento.show');
+    let index = visible.dataset.index;
+    visible.classList.remove('show');
+    DOMclients.querySelector(`.cliento[data-index="2"]`).classList.add('show');
+    
+    })
+
+    return;
+}
 
 // great people
 function renderGrpp( list ) {
@@ -435,19 +532,28 @@ function renderBlog( list ) {
         let item = list[i];
 
         if (item.icon && !item.video&& !item.slide) {
-            HTML = HTML + `<div class="cards">
-            <div class="blog-image">
-                    <img src="${item.icon[0]}">
-            </div>
+            HTML = HTML + `
+            <div class="cards">
+                <div class="blog-image" id="blog-ico">
+                        <img src="${item.icon[0]}">
+                </div>
             <div class="blog-info">
                     <h3>${item.title}</h3>
                     <a href="#">${item.tag}</a>
                     <p>${item.date}</p> <a href="#">By ${item.author}</a>
                     <p>${item.about}</p>
                     <a href="${item.readLink}">Read more</a> 
+                    </div>
             </div>
-    </div>`;  
-        }
+
+            <div class="lightboxImg">
+                <div class="background">
+                </div>
+                <div class="content">
+                    <img src="${item.icon[0]}"</img>
+                </div>
+            </div>
+            `;}
 
         if (item.slide) {
         HTML = HTML + `<div class="cards">

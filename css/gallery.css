@@ -58,6 +58,7 @@
             position: relative;
             text-transform: capitalize;
             border-radius: 5px;
+            cursor: pointer;
         }
             /* nuotrauka kuri tuo metu rodoma ja atrusiavus */
             .gallery > .list > .work.show {
@@ -176,6 +177,7 @@
 @media (max-width: 900px) {
     .gallery > .list > .work {
         width: 100%;
+        margin: 0 0 30px 0;
     }
     .gallery > .filter > .snaige {
         display: none;
@@ -185,4 +187,59 @@
     }
 }
 
+/* LIGHTOBX */
+#gallery .lightboxgallery {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+    #gallery .lightboxgallery.showw {
+        display: inline-block;
+    }
+    #gallery .lightboxgallery > .background {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-color: #000C;
+    }
+    #gallery .lightboxgallery > .content {
+        display: inline-block;
+        padding: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+    }
+    #gallery .lightboxgallery > .content img {
+        display: inline-block;
+        width: 800px;
+        height: 600px; 
+    }
 
+    @media (max-width: 900px) {
+        #gallery .cards {
+            width: calc(100% - (20px));
+            padding: 20px 20px;
+        }
+        #gallery .col-3 {
+            display: none;
+        }
+        #gallery .col-6 {
+            width: 100%;
+            margin: 0;
+        }
+        #gallery .lightboxgallery > .content {
+            width: 100%;
+        }
+        #gallery .lightboxgallery > .content img {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+
+    }

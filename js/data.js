@@ -192,10 +192,29 @@ const works = [
         photo: '6.jpg',
         tags: ['wordpress']
     },
-]
+];
 
 // our clients
-
+const clients = [
+    {
+        photo: '3.png',
+        name: 'Kirk McFall',
+        link: 'Google',
+        about: ` "The most well-known dummy text is the 'Kirk McFall', which is said originated the 16th century. This ancient dummy text is also  incomprehensible, of most European in Latin script."`,
+    },
+    {
+        photo: '3.png',
+        name: 'Edward Evans',
+        link: 'Google',
+        about: ` "The most well-known dummy text is the 'Edward Evans', which is said originated the 16th century. This ancient dummy text is also  incomprehensible, of most European in Latin script."`,
+    },
+    {
+        photo: '3.png',
+        name: 'Antonio Hernandez',
+        link: 'Google',
+        about: ` "The most well-known dummy text is the 'Antonio Hernandez', which is said originated the 16th century. This ancient dummy text is also  incomprehensible, of most European in Latin script."`,
+    }
+];
 // great people
 const greatList = [
     {
